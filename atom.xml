@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Alan</title>
   <icon>https://www.gravatar.com/avatar/d35277cdb4ea373d23f143ea2440842b</icon>
-  <subtitle>js</subtitle>
+  <subtitle>个人技术博客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
