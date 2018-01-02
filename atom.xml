@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-02T02:44:03.203Z</updated>
+  <updated>2018-01-02T03:04:10.730Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>UI设计</title>
+    <link href="http://yoursite.com/2018/01/02/UI%E8%AE%BE%E8%AE%A1/"/>
+    <id>http://yoursite.com/2018/01/02/UI设计/</id>
+    <published>2018-01-02T02:54:33.000Z</published>
+    <updated>2018-01-02T03:04:10.730Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="界面设计流程"><a href="#界面设计流程" class="headerlink" title="界面设计流程"></a>界面设计流程</h1><blockquote><p>需求-策划-原型图-设计图-制作-上线发布</p></blockquote><h1 id="三大部分：版式-制作-输出"><a href="#三大部分：版式-制作-输出" class="headerlink" title="三大部分：版式-制作-输出"></a>三大部分：版式-制作-输出</h1><h2 id="版式："><a href="#版式：" class="headerlink" title="版式："></a>版式：</h2><ul><li>分析需求内容</li><li>绘制草图</li></ul><h2 id="制作："><a href="#制作：" class="headerlink" title="制作："></a>制作：</h2><ul><li>优化版式结构</li><li>填充内容</li><li>样式设计</li></ul><h2 id="输出："><a href="#输出：" class="headerlink" title="输出："></a>输出：</h2><ul><li>优化</li><li>切图</li><li>输出</li></ul><h1 id="设计规范"><a href="#设计规范" class="headerlink" title="设计规范"></a>设计规范</h1><ol><li>色彩规范</li><li>文字规范</li><li>图标规范</li><li>控件规范</li></ol><h1 id="web设计"><a href="#web设计" class="headerlink" title="web设计"></a>web设计</h1><blockquote><p>设计纬度：版式、色彩、图片、字体、段落、细节</p><ul><li>界面设计流程</li><li>基本规范：设计规范</li></ul></blockquote><h2 id="字体选择："><a href="#字体选择：" class="headerlink" title="字体选择："></a>字体选择：</h2><ul><li>使用通用字体的样式属性</li><li>使用在线字体</li></ul><blockquote><p>色彩运用：色相、明度、纯度色彩三要素（对比色、互补色、同类色）</p><p>尺寸单位：px，pt   1pt=1/72英寸、PPI（DPI）、em</p><p>图像格式：JPG、GIF、PNG</p><p>视觉层次：透视、景深、元素层次、色彩层次</p><p>切图：ps</p><p>首页设计：登录/不登录</p></blockquote><h2 id="专题设计："><a href="#专题设计：" class="headerlink" title="专题设计："></a>专题设计：</h2><ol><li>结构</li><li>风格</li><li>头图</li><li>内容<blockquote><p>创意 版式 色彩 细节</p></blockquote></li></ol><h2 id="banner设计："><a href="#banner设计：" class="headerlink" title="banner设计："></a>banner设计：</h2><ol><li>需求</li><li>风格</li><li>版式</li><li>配色</li></ol><h2 id="听说读写"><a href="#听说读写" class="headerlink" title="听说读写"></a>听说读写</h2><blockquote><p>听：多收集、行业信息、发展趋势<br>说：与人交流、同行、用户<br>读：生活中、多观摩分析、别人作品<br>写：着手练习、临摹、优化</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;界面设计流程&quot;&gt;&lt;a href=&quot;#界面设计流程&quot; class=&quot;headerlink&quot; title=&quot;界面设计流程&quot;&gt;&lt;/a&gt;界面设计流程&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;需求-策划-原型图-设计图-制作-上线发布&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
+    
+  </entry>
   
   <entry>
     <title>ps切图就这么简单</title>
