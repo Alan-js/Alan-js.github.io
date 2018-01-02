@@ -13,25 +13,25 @@
     
     
     
-    <title>webpack详解 | Alan | 个人技术博客</title>
+    <title>css3 | Alan | 个人技术博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="web,webpack">
-    <meta name="description" content="为什么使用webpack？ 拆包–&amp;gt;允许按需加载 Plugin–&amp;gt;适应大型项目 Loader–&amp;gt;定制资源包  webpack核心概念–ModuleModule模块 js css，font，images…   函数写法：var mod1 = function() {}; 对象写法：var mod2 =  {    init： function() {}}; 立即执行函数：var m">
-<meta name="keywords" content="web,webpack">
+    <meta name="keywords" content="css3,web">
+    <meta name="description" content="css3 CSS即层叠样式表（Cascading StyleSheet）。 在网页制作时采用层叠样式表技术，可以有效地对页面的布局、字体、颜色、背景和其它效果实现更加精确的控制。  http://www.phpstudy.net/css3/">
+<meta name="keywords" content="css3,web">
 <meta property="og:type" content="article">
-<meta property="og:title" content="webpack详解">
-<meta property="og:url" content="http://yoursite.com/2017/08/02/webpack详解/index.html">
+<meta property="og:title" content="css3">
+<meta property="og:url" content="http://yoursite.com/2017/08/16/css3/index.html">
 <meta property="og:site_name" content="Alan">
-<meta property="og:description" content="为什么使用webpack？ 拆包–&amp;gt;允许按需加载 Plugin–&amp;gt;适应大型项目 Loader–&amp;gt;定制资源包  webpack核心概念–ModuleModule模块 js css，font，images…   函数写法：var mod1 = function() {}; 对象写法：var mod2 =  {    init： function() {}}; 立即执行函数：var m">
+<meta property="og:description" content="css3 CSS即层叠样式表（Cascading StyleSheet）。 在网页制作时采用层叠样式表技术，可以有效地对页面的布局、字体、颜色、背景和其它效果实现更加精确的控制。  http://www.phpstudy.net/css3/">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-02T08:30:30.853Z">
+<meta property="og:updated_time" content="2018-01-02T09:21:57.310Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="webpack详解">
-<meta name="twitter:description" content="为什么使用webpack？ 拆包–&amp;gt;允许按需加载 Plugin–&amp;gt;适应大型项目 Loader–&amp;gt;定制资源包  webpack核心概念–ModuleModule模块 js css，font，images…   函数写法：var mod1 = function() {}; 对象写法：var mod2 =  {    init： function() {}}; 立即执行函数：var m">
+<meta name="twitter:title" content="css3">
+<meta name="twitter:description" content="css3 CSS即层叠样式表（Cascading StyleSheet）。 在网页制作时采用层叠样式表技术，可以有效地对页面的布局、字体、颜色、背景和其它效果实现更加精确的控制。  http://www.phpstudy.net/css3/">
     
         <link rel="alternate" type="application/atom+xml" title="Alan" href="/atom.xml">
     
@@ -105,7 +105,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">webpack详解</div>
+        <div class="flex-col header-title ellipsis">css3</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -127,11 +127,11 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">webpack详解</h1>
+        <h1 class="title">css3</h1>
         <h5 class="subtitle">
             
-                <time datetime="2017-08-02T03:27:23.000Z" itemprop="datePublished" class="page-time">
-  2017-08-02
+                <time datetime="2017-08-16T09:09:38.000Z" itemprop="datePublished" class="page-time">
+  2017-08-16
 </time>
 
 
@@ -150,17 +150,17 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#为什么使用webpack？"><span class="post-toc-number">1.</span> <span class="post-toc-text">为什么使用webpack？</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#webpack核心概念–Module"><span class="post-toc-number">2.</span> <span class="post-toc-text">webpack核心概念–Module</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Module模块"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Module模块</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#webpack核心概念–Chunk"><span class="post-toc-number">3.</span> <span class="post-toc-text">webpack核心概念–Chunk</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Chunk块"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">Chunk块</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#webpack核心概念–定位"><span class="post-toc-number">4.</span> <span class="post-toc-text">webpack核心概念–定位</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Module-Loader（模块加载器）"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">Module Loader（模块加载器）</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Module-bundler（模块打包工具）"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">Module bundler（模块打包工具）</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#webpack配置"><span class="post-toc-number">5.</span> <span class="post-toc-text">webpack配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#编译资源"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">编译资源</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#提高构建速度"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">提高构建速度</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#css3"><span class="post-toc-number">1.</span> <span class="post-toc-text">css3</span></a></li></ol>
         </nav>
     </aside>
     
-<article id="post-webpack详解"
+<article id="post-css3"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">webpack详解</h1>
+        <h1 class="post-card-title">css3</h1>
         <div class="post-meta">
-            <time class="post-time" title="2017-08-02 11:27:23" datetime="2017-08-02T03:27:23.000Z"  itemprop="datePublished">2017-08-02</time>
+            <time class="post-time" title="2017-08-16 17:09:38" datetime="2017-08-16T09:09:38.000Z"  itemprop="datePublished">2017-08-16</time>
 
             
 
@@ -173,57 +173,12 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="为什么使用webpack？"><a href="#为什么使用webpack？" class="headerlink" title="为什么使用webpack？"></a>为什么使用webpack？</h1><ul>
-<li>拆包–&gt;允许按需加载</li>
-<li>Plugin–&gt;适应大型项目</li>
-<li>Loader–&gt;定制资源包</li>
+            <h1 id="css3"><a href="#css3" class="headerlink" title="css3"></a>css3</h1><blockquote>
+<p>CSS即层叠样式表（Cascading StyleSheet）。 在网页制作时采用层叠样式表技术，可以有效地对页面的布局、字体、颜色、背景和其它效果实现更加精确的控制。</p>
+<ul>
+<li><a href="http://www.phpstudy.net/css3/" target="_blank" rel="noopener">http://www.phpstudy.net/css3/</a></li>
 </ul>
-<h1 id="webpack核心概念–Module"><a href="#webpack核心概念–Module" class="headerlink" title="webpack核心概念–Module"></a>webpack核心概念–Module</h1><h2 id="Module模块"><a href="#Module模块" class="headerlink" title="Module模块"></a>Module模块</h2><ol>
-<li>js</li>
-<li>css，font，images…</li>
-</ol>
-<blockquote>
-<p>函数写法：<br>var mod1 = function() {};</p>
-<p>对象写法：<br>var mod2 =  {<br>    init： function() {}<br>};</p>
-<p>立即执行函数：<br>var mod3 = (function(win) {<br>})(window);</p>
 </blockquote>
-<h1 id="webpack核心概念–Chunk"><a href="#webpack核心概念–Chunk" class="headerlink" title="webpack核心概念–Chunk"></a>webpack核心概念–Chunk</h1><h2 id="Chunk块"><a href="#Chunk块" class="headerlink" title="Chunk块"></a>Chunk块</h2><p>Many small modules combined<br>Entry Chunk，Output Chunk，Common Chunk</p>
-<h1 id="webpack核心概念–定位"><a href="#webpack核心概念–定位" class="headerlink" title="webpack核心概念–定位"></a>webpack核心概念–定位</h1><h2 id="Module-Loader（模块加载器）"><a href="#Module-Loader（模块加载器）" class="headerlink" title="Module Loader（模块加载器）"></a>Module Loader（模块加载器）</h2><h2 id="Module-bundler（模块打包工具）"><a href="#Module-bundler（模块打包工具）" class="headerlink" title="Module bundler（模块打包工具）"></a>Module bundler（模块打包工具）</h2><ol>
-<li>browserify</li>
-<li>webpack</li>
-</ol>
-<blockquote>
-<p>特点：</p>
-<ol>
-<li>浏览器中加载入口及依赖</li>
-<li>执行入口及依赖代码</li>
-<li>分析及合成模块系统</li>
-<li>生成文件束（bundle/chunk）</li>
-</ol>
-</blockquote>
-<h1 id="webpack配置"><a href="#webpack配置" class="headerlink" title="webpack配置"></a>webpack配置</h1><ul>
-<li>entry：源文件</li>
-<li>output：生成文件</li>
-<li>loader：编译文件</li>
-<li>plugins：插件</li>
-<li>resolve：文件路径指向</li>
-</ul>
-<h2 id="编译资源"><a href="#编译资源" class="headerlink" title="编译资源"></a>编译资源</h2><blockquote>
-<p>将源文件编译成浏览器能识别的代码：</p>
-<ol>
-<li>es6–&gt;es5</li>
-<li>image–&gt;base64</li>
-<li>sass/less–&gt;css</li>
-<li>etc…</li>
-</ol>
-</blockquote>
-<h2 id="提高构建速度"><a href="#提高构建速度" class="headerlink" title="提高构建速度"></a>提高构建速度</h2><ol>
-<li>将大型库外链</li>
-<li>将库预先编译</li>
-<li>减少构建搜索或编译路径</li>
-<li>缓存</li>
-<li>并行</li>
-</ol>
 
         </div>
 
@@ -231,12 +186,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-01-02T08:30:30.853Z" itemprop="dateUpdated">2018-01-02 16:30:30</time>
+    最后更新时间：<time datetime="2018-01-02T09:21:57.310Z" itemprop="dateUpdated">2018-01-02 17:21:57</time>
 </span><br>
 
 
         
-        这里可以写作者留言!!!示例：<a href="/2017/08/02/webpack详解/" target="_blank" rel="external">http://yoursite.com/2017/08/02/webpack详解/</a>
+        这里可以写作者留言!!!示例：<a href="/2017/08/16/css3/" target="_blank" rel="external">http://yoursite.com/2017/08/16/css3/</a>
         
     </div>
     <footer>
@@ -256,7 +211,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack/">webpack</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css3/">css3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
 
 
             
@@ -266,7 +221,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/08/02/webpack详解/&title=《webpack详解》 — Alan&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/08/16/css3/&title=《css3》 — Alan&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -276,22 +231,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/08/02/webpack详解/&title=《webpack详解》 — Alan&source=js" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/08/16/css3/&title=《css3》 — Alan&source=js" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/08/02/webpack详解/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/08/16/css3/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《webpack详解》 — Alan&url=http://yoursite.com/2017/08/02/webpack详解/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《css3》 — Alan&url=http://yoursite.com/2017/08/16/css3/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/08/02/webpack详解/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/08/16/css3/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -314,18 +269,18 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2017/08/16/css3/" id="post-prev" class="post-nav-link">
+      <a href="/2017/08/18/html5/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">css3</h4>
+        <h4 class="title">html5</h4>
       </a>
     </div>
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2017/07/20/emmet/" id="post-next" class="post-nav-link">
+      <a href="/2017/08/02/webpack详解/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">emmet</h4>
+        <h4 class="title">webpack详解</h4>
       </a>
     </div>
   
@@ -443,7 +398,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/08/02/webpack详解/&title=《webpack详解》 — Alan&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/08/16/css3/&title=《css3》 — Alan&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -453,22 +408,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/08/02/webpack详解/&title=《webpack详解》 — Alan&source=js" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/08/16/css3/&title=《css3》 — Alan&source=js" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/08/02/webpack详解/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/08/16/css3/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《webpack详解》 — Alan&url=http://yoursite.com/2017/08/02/webpack详解/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《css3》 — Alan&url=http://yoursite.com/2017/08/16/css3/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/08/02/webpack详解/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/08/16/css3/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -479,7 +434,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACM0lEQVR42u3aS27DMAxFUe9/0y7QUYHGzn2kHUT01ShoYEdHA5YfbRte++/6+/n/X46+PX/qaG13LBkyZCzLIK872hZ/Z7qHmCpDhowHMEiQrW2UHNB5+D7fmwwZMmTwhI9sJd2iDBkyZPQDLg++X/1/Q4YMGYsweAJHSP2S9cZaXIYMGQsyaoOBz3y+fb4hQ4aMr2fspcXHAySJJIXxm/3IkCFjNOO8lUbiGx8ApKUvGaOibcmQIWMEgxSQ/QSuFprjo5chQ8ZQRtriT8NimmgW22oyZMgYyiCAWtM/TTr5eODFUzJkyHgA49qAmA5B00tpbxptMmTIGMdIH+OvJj9Jvo1DuQwZMsYxOpeu+hslqecFk1gZMmQszkhTus7m0sEDKl/56cqQIWMEI03Oam2ylHHx2ECGDBnLMmrJWRr4OJiMJVAVLkOGjBEMnnKlYbRzRYyPH2TIkCGDjyrT1thVTboXd0ZkyJAxjtEfWNZSurR9hg5XhgwZoxm1wjItSnkZTKgyZMh4GqPTmk8ZtTZfPKqUIUPGUAYZCfDhAd9o54gPM1wZMmSMY/R/plPcpoEVFbEyZMgYxNjDVWvfk1K5Fr5lyJDxBAZffNxIrmukbTUZMmTI6Kd06Tl1mnqoFpchQ8ZQBm911ZpofPzAO/8yZMiQcdU1L36Bg3cHUb9QhgwZj2Skrfz0cgY/mrjOliFDxggGL007ix9TnETKkCFjNCMdDNQ2Wmuopb8oQ4aMcYwfwK/wLhEJE7kAAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABwUlEQVR42u3aMW7DMAwF0Nz/0inQKUMbf5IWkQBPkxEo8pMHQiT1eMTj+Tten19HdeZ//71t4OLijrnPtyNBJJTemn9sCRcXd5GbB6/qJqv0CxsuLu6HcRNEdQ4uLu63c5NfkpVxcXG/hZsfVqppzPvKxsFcDRcXd8DtFUzvfT5e38XFxb2pK5EXO5IAd8PbcXFxV7jVpKXaQM1To8JWcXFxV7jVNur7NCa5YFENcLi4uJvcpMBRfX2vaBKFPFxc3BVuL5BVQ17eMsk/EC4u7jlulThpqSaHmIujEi4u7gp30mrNU51Jl6TZVsHFxR1z72X1LlIUtoqLi7vCrRZE8iSnd4iJ2iq4uLiHuc39FQugk4IILi7uJjcpdOYl0aRQMgqRuLi4K9x7g9E8T4mud+Di4h7m9sJTXsioXuy4CG24uLiL3ITyDEa+Qq/FgouLu8nNR95oST5EoQOcfzNcXNwxt9fTnBxokvn5Cri4uOe4efCqBqDeOhfr4+LiLnLz40g1QZpcwPq3vouLi/sx3KQ52ru0cSSQ4eLiLnLzV/a2h4uL+znceZF0HuaiwgouLu4Kd14wnWy1l2jh4uIe4/4A7pyLsrYEUloAAAAASUVORK5CYII=" alt="微信分享二维码">
 </div>
 
 
