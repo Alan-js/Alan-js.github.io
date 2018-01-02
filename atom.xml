@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-02T03:04:10.730Z</updated>
+  <updated>2018-01-02T03:33:16.450Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webpack详解</title>
+    <link href="http://yoursite.com/2018/01/02/webpack%E8%AF%A6%E8%A7%A3/"/>
+    <id>http://yoursite.com/2018/01/02/webpack详解/</id>
+    <published>2018-01-02T03:27:23.000Z</published>
+    <updated>2018-01-02T03:33:16.450Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="为什么使用webpack？"><a href="#为什么使用webpack？" class="headerlink" title="为什么使用webpack？"></a>为什么使用webpack？</h1><ul><li>拆包–&gt;允许按需加载</li><li>Plugin–&gt;适应大型项目</li><li>Loader–&gt;定制资源包</li></ul><h1 id="webpack核心概念–Module"><a href="#webpack核心概念–Module" class="headerlink" title="webpack核心概念–Module"></a>webpack核心概念–Module</h1><h2 id="Module模块"><a href="#Module模块" class="headerlink" title="Module模块"></a>Module模块</h2><ol><li>js</li><li>css，font，images…</li></ol><blockquote><p>函数写法：<br>var mod1 = function() {};</p><p>对象写法：<br>var mod2 =  {<br>    init： function() {}<br>};</p><p>立即执行函数：<br>var mod3 = (function(win) {<br>})(window);</p></blockquote><h1 id="webpack核心概念–Chunk"><a href="#webpack核心概念–Chunk" class="headerlink" title="webpack核心概念–Chunk"></a>webpack核心概念–Chunk</h1><h2 id="Chunk块"><a href="#Chunk块" class="headerlink" title="Chunk块"></a>Chunk块</h2><p>Many small modules combined<br>Entry Chunk，Output Chunk，Common Chunk</p><h1 id="webpack核心概念–定位"><a href="#webpack核心概念–定位" class="headerlink" title="webpack核心概念–定位"></a>webpack核心概念–定位</h1><h2 id="Module-Loader（模块加载器）"><a href="#Module-Loader（模块加载器）" class="headerlink" title="Module Loader（模块加载器）"></a>Module Loader（模块加载器）</h2><h2 id="Module-bundler（模块打包工具）"><a href="#Module-bundler（模块打包工具）" class="headerlink" title="Module bundler（模块打包工具）"></a>Module bundler（模块打包工具）</h2><ol><li>browserify</li><li>webpack</li></ol><blockquote><p>特点：</p><ol><li>浏览器中加载入口及依赖</li><li>执行入口及依赖代码</li><li>分析及合成模块系统</li><li>生成文件束（bundle/chunk）</li></ol></blockquote><h1 id="webpack配置"><a href="#webpack配置" class="headerlink" title="webpack配置"></a>webpack配置</h1><ul><li>entry：源文件</li><li>output：生成文件</li><li>loader：编译文件</li><li>plugins：插件</li><li>resolve：文件路径指向</li></ul><h2 id="编译资源"><a href="#编译资源" class="headerlink" title="编译资源"></a>编译资源</h2><blockquote><p>将源文件编译成浏览器能识别的代码：</p><ol><li>es6–&gt;es5</li><li>image–&gt;base64</li><li>sass/less–&gt;css</li><li>etc…</li></ol></blockquote><h2 id="提高构建速度"><a href="#提高构建速度" class="headerlink" title="提高构建速度"></a>提高构建速度</h2><ol><li>将大型库外链</li><li>将库预先编译</li><li>减少构建搜索或编译路径</li><li>缓存</li><li>并行</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;为什么使用webpack？&quot;&gt;&lt;a href=&quot;#为什么使用webpack？&quot; class=&quot;headerlink&quot; title=&quot;为什么使用webpack？&quot;&gt;&lt;/a&gt;为什么使用webpack？&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;拆包–&amp;gt;允许按需加载&lt;/li&gt;
+&lt;
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>UI设计</title>
