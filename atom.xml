@@ -313,9 +313,9 @@
     </summary>
     
     
-      <category term="express" scheme="http://yoursite.com/tags/express/"/>
-    
       <category term="nodejs" scheme="http://yoursite.com/tags/nodejs/"/>
+    
+      <category term="express" scheme="http://yoursite.com/tags/express/"/>
     
   </entry>
   
