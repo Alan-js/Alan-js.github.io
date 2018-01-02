@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-02T06:41:26.200Z</updated>
+  <updated>2018-01-02T08:23:19.443Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,110 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>koa2</title>
+    <link href="http://yoursite.com/2018/01/02/koa2/"/>
+    <id>http://yoursite.com/2018/01/02/koa2/</id>
+    <published>2018-01-02T08:19:36.000Z</published>
+    <updated>2018-01-02T08:23:19.443Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="koa2入门"><a href="#koa2入门" class="headerlink" title="koa2入门"></a>koa2入门</h1><ul><li><a href="https://cnodejs.org/topic/5709959abc564eaf3c6a48c8" target="_blank" rel="noopener">https://cnodejs.org/topic/5709959abc564eaf3c6a48c8</a></li></ul><h1 id="koa2中文官网"><a href="#koa2中文官网" class="headerlink" title="koa2中文官网"></a>koa2中文官网</h1><blockquote><p>koa 是由 Express 原班人马打造的，致力于成为一个更小、更富有表现力、更健壮的 Web 框架。 使用 koa 编写 web 应用，通过组合不同的 generator，可以免除重复繁琐的回调函数嵌套， 并极大地提升错误处理的效率。koa 不在内核方法中绑定任何中间件， 它仅仅提供了一个轻量优雅的函数库，使得编写 Web 应用变得得心应手。</p><ul><li><a href="https://koa.bootcss.com/" target="_blank" rel="noopener">https://koa.bootcss.com/</a></li></ul></blockquote><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><blockquote><p>Koa 依赖 node v7.6.0 或 ES2015及更高版本和 async 方法支持.<br>你可以使用自己喜欢的版本管理器快速安装支持的 node 版本：<br>$ nvm install 7<br>$ npm i koa<br>$ node my-koa-app.js</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;koa2入门&quot;&gt;&lt;a href=&quot;#koa2入门&quot; class=&quot;headerlink&quot; title=&quot;koa2入门&quot;&gt;&lt;/a&gt;koa2入门&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://cnodejs.org/topic/5709959abc564
+      
+    
+    </summary>
+    
+    
+      <category term="nodejs" scheme="http://yoursite.com/tags/nodejs/"/>
+    
+      <category term="koa2" scheme="http://yoursite.com/tags/koa2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>express</title>
+    <link href="http://yoursite.com/2018/01/02/express/"/>
+    <id>http://yoursite.com/2018/01/02/express/</id>
+    <published>2018-01-02T08:15:15.000Z</published>
+    <updated>2018-01-02T08:18:27.989Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="express"><a href="#express" class="headerlink" title="express"></a>express</h1><ul><li><a href="http://www.expressjs.com.cn/guide/routing.html" target="_blank" rel="noopener">http://www.expressjs.com.cn/guide/routing.html</a></li></ul><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol><li><p>首先假定你已经安装了 Node.js，接下来为你的应用创建一个目录，然后进入此目录并将其作为当前工作目录。<br>$ mkdir myapp<br>$ cd myapp</p></li><li><p>通过 npm init 命令为你的应用创建一个 package.json 文件。 欲了解 package.json 是如何起作用的，请参考 Specifics of npm’s package.json handling。<br>$ npm init</p></li><li><p>此命令将要求你输入几个参数，例如此应用的名称和版本。 你可以直接按“回车”键接受默认设置即可，下面这个除外：<br>entry point: (index.js)</p><blockquote><p>键入 app.js 或者你所希望的名称，这是当前应用的入口文件。如果你希望采用默认的 index.js 文件名，只需按“回车”键即可。</p></blockquote></li><li><p>接下来安装 Express 并将其保存到依赖列表中：<br>$ npm install express –save</p><blockquote><p>如果只是临时安装 Express，不想将它添加到依赖列表中，只需略去 –save 参数即可：<br>$ npm install express</p></blockquote></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;express&quot;&gt;&lt;a href=&quot;#express&quot; class=&quot;headerlink&quot; title=&quot;express&quot;&gt;&lt;/a&gt;express&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.expressjs.com.cn/guide/r
+      
+    
+    </summary>
+    
+    
+      <category term="nodejs" scheme="http://yoursite.com/tags/nodejs/"/>
+    
+      <category term="express" scheme="http://yoursite.com/tags/express/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NodeJS</title>
+    <link href="http://yoursite.com/2018/01/02/NodeJS/"/>
+    <id>http://yoursite.com/2018/01/02/NodeJS/</id>
+    <published>2018-01-02T07:57:33.000Z</published>
+    <updated>2018-01-02T08:13:02.400Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="nodejs"><a href="#nodejs" class="headerlink" title="nodejs"></a>nodejs</h1><blockquote><p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。<br>Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。<br>Node.js 的包管理器 npm，是全球最大的开源库生态系统。</p></blockquote><ul><li>nodejs中文官网：<a href="http://nodejs.cn/" target="_blank" rel="noopener">http://nodejs.cn/</a></li><li>nodejs社区：<a href="https://cnodejs.org/" target="_blank" rel="noopener">https://cnodejs.org/</a></li><li>快速入门： <a href="http://nqdeng.github.io/7-days-nodejs/#1.1" target="_blank" rel="noopener">http://nqdeng.github.io/7-days-nodejs/#1.1</a></li></ul><h1 id="利用n和nvm管理Node的版本"><a href="#利用n和nvm管理Node的版本" class="headerlink" title="利用n和nvm管理Node的版本"></a>利用n和nvm管理Node的版本</h1><h2 id="n"><a href="#n" class="headerlink" title="n"></a>n</h2><blockquote><p>n是Node的一个模块，作者是TJ Holowaychuk（鼎鼎大名的Express框架作者），就像它的名字一样，它的理念就是简单.</p></blockquote><ol><li>安装很简单：</li></ol><ul><li>$ sudo npm install -g n</li></ul><blockquote><p>安装完成之后，直接输入n后输出当前已经安装的node版本以及正在使用的版本（前面有一个o），你可以通过移动上下方向键来选择要使用的版本，最后按回车生效。<br>$ n<br>    6.08.1<br>o    6.10.2</p></blockquote><ol><li><p>安装最新的版本<br>$ n latest</p></li><li><p>安装稳定版本<br>$ n stable</p></li><li><p>删除某个版本<br>$ n rm 0.10.1</p></li></ol><h2 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h2><blockquote><p>nvm全称Node Version Manager，它与n的实现方式不同，其是通过shell脚本实现的。</p></blockquote><ol><li><p>安装方式有两种：<br>$ curl <a href="https://raw.github.com/creationix/nvm/v0.4.0/install.sh" target="_blank" rel="noopener">https://raw.github.com/creationix/nvm/v0.4.0/install.sh</a> | sh<br>或者<br>$ wget -qO- <a href="https://raw.github.com/creationix/nvm/v0.4.0/install.sh" target="_blank" rel="noopener">https://raw.github.com/creationix/nvm/v0.4.0/install.sh</a> | sh</p></li><li><p>使用指定的版本<br>$ nvm use 6.10.2</p></li><li><p>查看当前已经安装的版本<br>$ nvm ls<br>.nvm<br>-&gt;  v6.10.2</p></li><li><p>查看正在使用的版本<br>$ nvm current<br>v6.10.2</p></li><li><p>卸载nvm<br>$ rm -rf ~/.nvm</p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;nodejs&quot;&gt;&lt;a href=&quot;#nodejs&quot; class=&quot;headerlink&quot; title=&quot;nodejs&quot;&gt;&lt;/a&gt;nodejs&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行
+      
+    
+    </summary>
+    
+    
+      <category term="nodejs" scheme="http://yoursite.com/tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js</title>
+    <link href="http://yoursite.com/2018/01/02/js/"/>
+    <id>http://yoursite.com/2018/01/02/js/</id>
+    <published>2018-01-02T07:41:28.000Z</published>
+    <updated>2018-01-02T07:52:26.559Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="什么是JavaScript？"><a href="#什么是JavaScript？" class="headerlink" title="什么是JavaScript？"></a>什么是JavaScript？</h1><blockquote><p>JavaScript（缩写：JS）是一门成熟的动态编程语言，当应用于HTML文档时，可以在网站上提供动态交互性。它是Mozilla项目联合创始人，Mozilla基金会和Mozilla公司的Brendan Eich发明的。</p><ul><li><a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/JavaScript_basics</a></li><li><a href="http://www.ruanyifeng.com/blog/javascript/" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/javascript/</a></li><li><a href="http://javascript.ruanyifeng.com/#introduction" target="_blank" rel="noopener">http://javascript.ruanyifeng.com/#introduction</a></li><li><a href="https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000</a></li><li><a href="http://liubin.org/promises-book/" target="_blank" rel="noopener">http://liubin.org/promises-book/</a></li><li><a href="http://www.aseoe.com/manual/js/" target="_blank" rel="noopener">http://www.aseoe.com/manual/js/</a></li><li><a href="http://www1.qdfuns.com/feres.php?do=picture&amp;listtype=book" target="_blank" rel="noopener">http://www1.qdfuns.com/feres.php?do=picture&amp;listtype=book</a></li></ul></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;什么是JavaScript？&quot;&gt;&lt;a href=&quot;#什么是JavaScript？&quot; class=&quot;headerlink&quot; title=&quot;什么是JavaScript？&quot;&gt;&lt;/a&gt;什么是JavaScript？&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;JavaScrip
+      
+    
+    </summary>
+    
+    
+      <category term="web" scheme="http://yoursite.com/tags/web/"/>
+    
+      <category term="day-to-day" scheme="http://yoursite.com/tags/day-to-day/"/>
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>git</title>
@@ -36,9 +140,9 @@
     </summary>
     
     
-      <category term="web" scheme="http://yoursite.com/tags/web/"/>
-    
       <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+      <category term="web" scheme="http://yoursite.com/tags/web/"/>
     
   </entry>
   
@@ -62,9 +166,9 @@
     </summary>
     
     
-      <category term="emmet" scheme="http://yoursite.com/tags/emmet/"/>
-    
       <category term="web" scheme="http://yoursite.com/tags/web/"/>
+    
+      <category term="emmet" scheme="http://yoursite.com/tags/emmet/"/>
     
   </entry>
   
