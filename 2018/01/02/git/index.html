@@ -19,16 +19,16 @@
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="git,web">
+    <meta name="keywords" content="web,git">
     <meta name="description" content="git Git是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。 Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。   http://git.oschina.net/progit/index.html   git工具 sourcetree   https://www.sourcetreeapp.com/">
-<meta name="keywords" content="git,web">
+<meta name="keywords" content="web,git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git">
 <meta property="og:url" content="http://yoursite.com/2018/01/02/git/index.html">
 <meta property="og:site_name" content="Alan">
 <meta property="og:description" content="git Git是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。 Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。   http://git.oschina.net/progit/index.html   git工具 sourcetree   https://www.sourcetreeapp.com/">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-02T06:38:47.771Z">
+<meta property="og:updated_time" content="2018-01-02T06:41:26.200Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git">
 <meta name="twitter:description" content="git Git是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。 Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。   http://git.oschina.net/progit/index.html   git工具 sourcetree   https://www.sourcetreeapp.com/">
@@ -150,7 +150,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#git"><span class="post-toc-number">1.</span> <span class="post-toc-text">git</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#git工具"><span class="post-toc-number">2.</span> <span class="post-toc-text">git工具</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#git常用命令"><span class="post-toc-number">3.</span> <span class="post-toc-text">git常用命令</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#专用名词"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">专用名词</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#新建"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">新建</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#配置"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">配置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#增加-删除文件"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">增加/删除文件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码提交"><span class="post-toc-number">3.5.</span> <span class="post-toc-text">代码提交</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#分支"><span class="post-toc-number">3.6.</span> <span class="post-toc-text">分支</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#标签"><span class="post-toc-number">3.7.</span> <span class="post-toc-text">标签</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#查看信息"><span class="post-toc-number">3.8.</span> <span class="post-toc-text">查看信息</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#远程同步"><span class="post-toc-number">3.9.</span> <span class="post-toc-text">远程同步</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#撤销"><span class="post-toc-number">3.10.</span> <span class="post-toc-text">撤销</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#重置暂存区与工作区，与上一次commit保持一致"><span class="post-toc-number">4.</span> <span class="post-toc-text">重置暂存区与工作区，与上一次commit保持一致</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变"><span class="post-toc-number">5.</span> <span class="post-toc-text">重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致"><span class="post-toc-number">6.</span> <span class="post-toc-text">重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#重置当前HEAD为指定commit，但保持暂存区和工作区不变"><span class="post-toc-number">7.</span> <span class="post-toc-text">重置当前HEAD为指定commit，但保持暂存区和工作区不变</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#git"><span class="post-toc-number">1.</span> <span class="post-toc-text">git</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#git工具"><span class="post-toc-number">2.</span> <span class="post-toc-text">git工具</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#git常用命令"><span class="post-toc-number">3.</span> <span class="post-toc-text">git常用命令</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#专用名词"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">专用名词</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#新建"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">新建</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#配置"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">配置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#增加-删除文件"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">增加/删除文件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码提交"><span class="post-toc-number">3.5.</span> <span class="post-toc-text">代码提交</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#分支"><span class="post-toc-number">3.6.</span> <span class="post-toc-text">分支</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#标签"><span class="post-toc-number">3.7.</span> <span class="post-toc-text">标签</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#查看信息"><span class="post-toc-number">3.8.</span> <span class="post-toc-text">查看信息</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#远程同步"><span class="post-toc-number">3.9.</span> <span class="post-toc-text">远程同步</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#撤销"><span class="post-toc-number">3.10.</span> <span class="post-toc-text">撤销</span></a></li></ol></li></ol>
         </nav>
     </aside>
     
@@ -313,11 +313,15 @@
 </li>
 <li><p>重置暂存区的指定文件，与上一次commit保持一致，但工作区不变<br>$ git reset [file]</p>
 </li>
+<li><p>重置暂存区与工作区，与上一次commit保持一致<br>$ git reset –hard</p>
+</li>
+<li><p>重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变<br>$ git reset [commit]</p>
+</li>
+<li><p>重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致<br>$ git reset –hard [commit]</p>
+</li>
+<li><p>重置当前HEAD为指定commit，但保持暂存区和工作区不变<br>$ git reset –keep [commit]</p>
+</li>
 </ul>
-<h1 id="重置暂存区与工作区，与上一次commit保持一致"><a href="#重置暂存区与工作区，与上一次commit保持一致" class="headerlink" title="重置暂存区与工作区，与上一次commit保持一致"></a>重置暂存区与工作区，与上一次commit保持一致</h1><p>$ git reset –hard</p>
-<h1 id="重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变"><a href="#重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变" class="headerlink" title="重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变"></a>重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</h1><p>$ git reset [commit]</p>
-<h1 id="重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致"><a href="#重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致" class="headerlink" title="重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致"></a>重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致</h1><p>$ git reset –hard [commit]</p>
-<h1 id="重置当前HEAD为指定commit，但保持暂存区和工作区不变"><a href="#重置当前HEAD为指定commit，但保持暂存区和工作区不变" class="headerlink" title="重置当前HEAD为指定commit，但保持暂存区和工作区不变"></a>重置当前HEAD为指定commit，但保持暂存区和工作区不变</h1><p>$ git reset –keep [commit]</p>
 
         </div>
 
@@ -325,7 +329,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-01-02T06:38:47.771Z" itemprop="dateUpdated">2018-01-02 14:38:47</time>
+    最后更新时间：<time datetime="2018-01-02T06:41:26.200Z" itemprop="dateUpdated">2018-01-02 14:41:26</time>
 </span><br>
 
 
