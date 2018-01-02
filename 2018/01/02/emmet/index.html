@@ -13,25 +13,25 @@
     
     
     
-    <title>webpack详解 | Alan | 个人技术博客</title>
+    <title>emmet | Alan | 个人技术博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="web,webpack">
-    <meta name="description" content="为什么使用webpack？ 拆包–&amp;gt;允许按需加载 Plugin–&amp;gt;适应大型项目 Loader–&amp;gt;定制资源包  webpack核心概念–ModuleModule模块 js css，font，images…   函数写法：var mod1 = function() {}; 对象写法：var mod2 =  {    init： function() {}}; 立即执行函数：var m">
-<meta name="keywords" content="web,webpack">
+    <meta name="keywords" content="emmet,web">
+    <meta name="description" content="介绍 Emmet (前身为 Zen Coding) 是一个能大幅度提高前端开发效率的一个工具.Emmet把片段这个概念提高到了一个新的层次：你可以设置CSS形式的能够动态被解析的表达式，然后根据你所输入的缩写来得到相应的内容。Emmet是很成熟的并且非常适用于编写HTML/XML 和 CSS 代码的前端开发人员，但也可以用于编程语言.  https://www.w3cplus.com/tools/">
+<meta name="keywords" content="emmet,web">
 <meta property="og:type" content="article">
-<meta property="og:title" content="webpack详解">
-<meta property="og:url" content="http://yoursite.com/2018/01/02/webpack详解/index.html">
+<meta property="og:title" content="emmet">
+<meta property="og:url" content="http://yoursite.com/2018/01/02/emmet/index.html">
 <meta property="og:site_name" content="Alan">
-<meta property="og:description" content="为什么使用webpack？ 拆包–&amp;gt;允许按需加载 Plugin–&amp;gt;适应大型项目 Loader–&amp;gt;定制资源包  webpack核心概念–ModuleModule模块 js css，font，images…   函数写法：var mod1 = function() {}; 对象写法：var mod2 =  {    init： function() {}}; 立即执行函数：var m">
+<meta property="og:description" content="介绍 Emmet (前身为 Zen Coding) 是一个能大幅度提高前端开发效率的一个工具.Emmet把片段这个概念提高到了一个新的层次：你可以设置CSS形式的能够动态被解析的表达式，然后根据你所输入的缩写来得到相应的内容。Emmet是很成熟的并且非常适用于编写HTML/XML 和 CSS 代码的前端开发人员，但也可以用于编程语言.  https://www.w3cplus.com/tools/">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-02T05:29:06.871Z">
+<meta property="og:updated_time" content="2018-01-02T06:04:42.468Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="webpack详解">
-<meta name="twitter:description" content="为什么使用webpack？ 拆包–&amp;gt;允许按需加载 Plugin–&amp;gt;适应大型项目 Loader–&amp;gt;定制资源包  webpack核心概念–ModuleModule模块 js css，font，images…   函数写法：var mod1 = function() {}; 对象写法：var mod2 =  {    init： function() {}}; 立即执行函数：var m">
+<meta name="twitter:title" content="emmet">
+<meta name="twitter:description" content="介绍 Emmet (前身为 Zen Coding) 是一个能大幅度提高前端开发效率的一个工具.Emmet把片段这个概念提高到了一个新的层次：你可以设置CSS形式的能够动态被解析的表达式，然后根据你所输入的缩写来得到相应的内容。Emmet是很成熟的并且非常适用于编写HTML/XML 和 CSS 代码的前端开发人员，但也可以用于编程语言.  https://www.w3cplus.com/tools/">
     
         <link rel="alternate" type="application/atom+xml" title="Alan" href="/atom.xml">
     
@@ -105,7 +105,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">webpack详解</div>
+        <div class="flex-col header-title ellipsis">emmet</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -127,10 +127,10 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">webpack详解</h1>
+        <h1 class="title">emmet</h1>
         <h5 class="subtitle">
             
-                <time datetime="2018-01-02T03:27:23.000Z" itemprop="datePublished" class="page-time">
+                <time datetime="2018-01-02T05:51:30.000Z" itemprop="datePublished" class="page-time">
   2018-01-02
 </time>
 
@@ -150,17 +150,17 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#为什么使用webpack？"><span class="post-toc-number">1.</span> <span class="post-toc-text">为什么使用webpack？</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#webpack核心概念–Module"><span class="post-toc-number">2.</span> <span class="post-toc-text">webpack核心概念–Module</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Module模块"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Module模块</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#webpack核心概念–Chunk"><span class="post-toc-number">3.</span> <span class="post-toc-text">webpack核心概念–Chunk</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Chunk块"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">Chunk块</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#webpack核心概念–定位"><span class="post-toc-number">4.</span> <span class="post-toc-text">webpack核心概念–定位</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Module-Loader（模块加载器）"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">Module Loader（模块加载器）</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Module-bundler（模块打包工具）"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">Module bundler（模块打包工具）</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#webpack配置"><span class="post-toc-number">5.</span> <span class="post-toc-text">webpack配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#编译资源"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">编译资源</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#提高构建速度"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">提高构建速度</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#介绍"><span class="post-toc-number">1.</span> <span class="post-toc-text">介绍</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#语法"><span class="post-toc-number">2.</span> <span class="post-toc-text">语法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#后代："><span class="post-toc-number">2.1.</span> <span class="post-toc-text">后代：&gt;</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#兄弟："><span class="post-toc-number">2.2.</span> <span class="post-toc-text">兄弟：+</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#上级："><span class="post-toc-number">2.3.</span> <span class="post-toc-text">上级：\^</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#分组："><span class="post-toc-number">2.4.</span> <span class="post-toc-text">分组：()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#乘法："><span class="post-toc-number">2.5.</span> <span class="post-toc-text">乘法：*</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#自增符号："><span class="post-toc-number">2.6.</span> <span class="post-toc-text">自增符号：\$</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ID和类属性"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">ID和类属性</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#自定义属性"><span class="post-toc-number">2.8.</span> <span class="post-toc-text">自定义属性</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#文本："><span class="post-toc-number">2.9.</span> <span class="post-toc-text">文本：{}</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#HTML"><span class="post-toc-number">2.10.</span> <span class="post-toc-text">HTML</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#标签"><span class="post-toc-number">2.11.</span> <span class="post-toc-text">标签</span></a></li></ol></li></ol>
         </nav>
     </aside>
     
-<article id="post-webpack详解"
+<article id="post-emmet"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">webpack详解</h1>
+        <h1 class="post-card-title">emmet</h1>
         <div class="post-meta">
-            <time class="post-time" title="2018-01-02 11:27:23" datetime="2018-01-02T03:27:23.000Z"  itemprop="datePublished">2018-01-02</time>
+            <time class="post-time" title="2018-01-02 13:51:30" datetime="2018-01-02T05:51:30.000Z"  itemprop="datePublished">2018-01-02</time>
 
             
 
@@ -173,57 +173,45 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="为什么使用webpack？"><a href="#为什么使用webpack？" class="headerlink" title="为什么使用webpack？"></a>为什么使用webpack？</h1><ul>
-<li>拆包–&gt;允许按需加载</li>
-<li>Plugin–&gt;适应大型项目</li>
-<li>Loader–&gt;定制资源包</li>
+            <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><blockquote>
+<p>Emmet (前身为 Zen Coding) 是一个能大幅度提高前端开发效率的一个工具.Emmet把片段这个概念提高到了一个新的层次：你可以设置CSS形式的能够动态被解析的表达式，然后根据你所输入的缩写来得到相应的内容。Emmet是很成熟的并且非常适用于编写HTML/XML 和 CSS 代码的前端开发人员，但也可以用于编程语言.</p>
+<ul>
+<li><a href="https://www.w3cplus.com/tools/emmet-cheat-sheet.html" target="_blank" rel="noopener">https://www.w3cplus.com/tools/emmet-cheat-sheet.html</a></li>
 </ul>
-<h1 id="webpack核心概念–Module"><a href="#webpack核心概念–Module" class="headerlink" title="webpack核心概念–Module"></a>webpack核心概念–Module</h1><h2 id="Module模块"><a href="#Module模块" class="headerlink" title="Module模块"></a>Module模块</h2><ol>
-<li>js</li>
-<li>css，font，images…</li>
-</ol>
-<blockquote>
-<p>函数写法：<br>var mod1 = function() {};</p>
-<p>对象写法：<br>var mod2 =  {<br>    init： function() {}<br>};</p>
-<p>立即执行函数：<br>var mod3 = (function(win) {<br>})(window);</p>
 </blockquote>
-<h1 id="webpack核心概念–Chunk"><a href="#webpack核心概念–Chunk" class="headerlink" title="webpack核心概念–Chunk"></a>webpack核心概念–Chunk</h1><h2 id="Chunk块"><a href="#Chunk块" class="headerlink" title="Chunk块"></a>Chunk块</h2><p>Many small modules combined<br>Entry Chunk，Output Chunk，Common Chunk</p>
-<h1 id="webpack核心概念–定位"><a href="#webpack核心概念–定位" class="headerlink" title="webpack核心概念–定位"></a>webpack核心概念–定位</h1><h2 id="Module-Loader（模块加载器）"><a href="#Module-Loader（模块加载器）" class="headerlink" title="Module Loader（模块加载器）"></a>Module Loader（模块加载器）</h2><h2 id="Module-bundler（模块打包工具）"><a href="#Module-bundler（模块打包工具）" class="headerlink" title="Module bundler（模块打包工具）"></a>Module bundler（模块打包工具）</h2><ol>
-<li>browserify</li>
-<li>webpack</li>
-</ol>
-<blockquote>
-<p>特点：</p>
-<ol>
-<li>浏览器中加载入口及依赖</li>
-<li>执行入口及依赖代码</li>
-<li>分析及合成模块系统</li>
-<li>生成文件束（bundle/chunk）</li>
-</ol>
+<h1 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h1><h2 id="后代："><a href="#后代：" class="headerlink" title="后代：>"></a>后代：></h2><blockquote>
+<p>缩写：nav&gt;ul&gt;li</p>
 </blockquote>
-<h1 id="webpack配置"><a href="#webpack配置" class="headerlink" title="webpack配置"></a>webpack配置</h1><ul>
-<li>entry：源文件</li>
-<li>output：生成文件</li>
-<li>loader：编译文件</li>
-<li>plugins：插件</li>
-<li>resolve：文件路径指向</li>
-</ul>
-<h2 id="编译资源"><a href="#编译资源" class="headerlink" title="编译资源"></a>编译资源</h2><blockquote>
-<p>将源文件编译成浏览器能识别的代码：</p>
-<ol>
-<li>es6–&gt;es5</li>
-<li>image–&gt;base64</li>
-<li>sass/less–&gt;css</li>
-<li>etc…</li>
-</ol>
+<h2 id="兄弟："><a href="#兄弟：" class="headerlink" title="兄弟：+"></a>兄弟：+</h2><blockquote>
+<p>缩写：div+p+bq</p>
 </blockquote>
-<h2 id="提高构建速度"><a href="#提高构建速度" class="headerlink" title="提高构建速度"></a>提高构建速度</h2><ol>
-<li>将大型库外链</li>
-<li>将库预先编译</li>
-<li>减少构建搜索或编译路径</li>
-<li>缓存</li>
-<li>并行</li>
-</ol>
+<h2 id="上级："><a href="#上级：" class="headerlink" title="上级：\^"></a>上级：\^</h2><blockquote>
+<p>缩写：div+div&gt;p&gt;span+em^bq</p>
+</blockquote>
+<h2 id="分组："><a href="#分组：" class="headerlink" title="分组：()"></a>分组：()</h2><blockquote>
+<p>缩写：(div&gt;dl&gt;(dt+dd)*3)+footer&gt;p</p>
+</blockquote>
+<h2 id="乘法："><a href="#乘法：" class="headerlink" title="乘法：*"></a>乘法：*</h2><blockquote>
+<p>缩写：ul&gt;li*</p>
+</blockquote>
+<h2 id="自增符号："><a href="#自增符号：" class="headerlink" title="自增符号：\$"></a>自增符号：\$</h2><blockquote>
+<p>缩写：ul&gt;li.item$*5</p>
+</blockquote>
+<h2 id="ID和类属性"><a href="#ID和类属性" class="headerlink" title="ID和类属性"></a>ID和类属性</h2><blockquote>
+<p>缩写：#header<br>缩写: .class</p>
+</blockquote>
+<h2 id="自定义属性"><a href="#自定义属性" class="headerlink" title="自定义属性"></a>自定义属性</h2><blockquote>
+<p>缩写：p[title=”Hello world”]</p>
+</blockquote>
+<h2 id="文本："><a href="#文本：" class="headerlink" title="文本：{}"></a>文本：{}</h2><blockquote>
+<p>缩写：a{Click me}</p>
+</blockquote>
+<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><blockquote>
+<p>缩写：!</p>
+</blockquote>
+<h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h2><blockquote>
+<p>a、p、span、img、input、btn</p>
+</blockquote>
 
         </div>
 
@@ -231,12 +219,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-01-02T05:29:06.871Z" itemprop="dateUpdated">2018-01-02 13:29:06</time>
+    最后更新时间：<time datetime="2018-01-02T06:04:42.468Z" itemprop="dateUpdated">2018-01-02 14:04:42</time>
 </span><br>
 
 
         
-        这里可以写作者留言!!!示例：<a href="/2018/01/02/webpack详解/" target="_blank" rel="external">http://yoursite.com/2018/01/02/webpack详解/</a>
+        这里可以写作者留言!!!示例：<a href="/2018/01/02/emmet/" target="_blank" rel="external">http://yoursite.com/2018/01/02/emmet/</a>
         
     </div>
     <footer>
@@ -256,7 +244,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack/">webpack</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/emmet/">emmet</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
 
 
             
@@ -266,7 +254,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/01/02/webpack详解/&title=《webpack详解》 — Alan&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/01/02/emmet/&title=《emmet》 — Alan&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -276,22 +264,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/01/02/webpack详解/&title=《webpack详解》 — Alan&source=js" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/01/02/emmet/&title=《emmet》 — Alan&source=js" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/01/02/webpack详解/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/01/02/emmet/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《webpack详解》 — Alan&url=http://yoursite.com/2018/01/02/webpack详解/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《emmet》 — Alan&url=http://yoursite.com/2018/01/02/emmet/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/01/02/webpack详解/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/01/02/emmet/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -311,21 +299,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2018/01/02/前端构建工具/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">前端构建工具</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2018/01/02/UI设计/" id="post-next" class="post-nav-link">
+      <a href="/2018/01/02/前端构建工具/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">UI设计</h4>
+        <h4 class="title">前端构建工具</h4>
       </a>
     </div>
   
@@ -443,7 +424,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/01/02/webpack详解/&title=《webpack详解》 — Alan&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/01/02/emmet/&title=《emmet》 — Alan&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -453,22 +434,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/01/02/webpack详解/&title=《webpack详解》 — Alan&source=js" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/01/02/emmet/&title=《emmet》 — Alan&source=js" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/01/02/webpack详解/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/01/02/emmet/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《webpack详解》 — Alan&url=http://yoursite.com/2018/01/02/webpack详解/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《emmet》 — Alan&url=http://yoursite.com/2018/01/02/emmet/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/01/02/webpack详解/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/01/02/emmet/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -479,7 +460,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMklEQVR42u3aQY6DQAwFUe5/aUaaVaQRpL4NI2hXr6KQBD8WTtvubcNr/12frz/X30+S9/fTtd2xZMiQ8VoG+bmjsM6v8rDO74uoMmTIGMAgSZZfJY/pPBHz2GTIkCHjfMOXhpKGKEOGDBnXJlxOffT/hgwZMh7MuGoDd1XJemMtLkOGjBcyaoOB/3l9+3xDhgwZj2fspUW2lXwTSYYKX+KRIUPG0gzSSusE1yl9yRh1I6c8ZMiQsQSDFJC1Fls/NcePXoYMGYsySHCdtJim42JbTYYMGYsyePOLF7H8iAb/1pe7y5AhYwAjTbhp0iTvt5p0MmTIGMCotc9qGN7mC1K5DBkyBjBqpWOafGsttgsmsTJkyHg5g9yyNkqstfD4gziMQYYMGcsxeGMrTbLpEDQdWx7+b8iQIWM5Bml41Vr2ndY/H1eg0xwyZMh4OSPYOYZtON7076d1GTJkTGPw8pUPEjobUBSbDBkylmZ0BpZ8nEAA6fBAhgwZ0xi1YWFa3JKtJKfKkCFjGoOXoP1QascsNrJkyJAxgMGDTo9TEEaHKkOGjAkM/qPpmJMftuB3R0WsDBkyFmLs4QqeCt7w1TagMmTImMNIEysPtEbiRbUMGTKmMWqHvfpHJdI9bFCLy5AhY1FGZ2CQJtxrC2YZMmTIIJ8hCbozBG2NBGTIkDGMUTtCwQ+N8eK2lellyJDxWgYpYsmosn8EtriJlCFDxtKMqwYD6ZCAB80fjQwZMpZj/ACQXhkG4EDA5QAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABwUlEQVR42u3aQW6EMBAEQP7/6UTKNYHtmTGGSOUTYlm7zMEy0z6OuH39tLPrszu/29m/FjdcXNwxNx/g7F/XvV1PLDfg4uLu5yaLVzKN6+cT+gcbLi7uy7g5sbdVwsXF/Y/c3mdM9XXg4uK+h1stZOTPT3rDxcV9ijsvmM6vt9Z3cXFxB6lEtRRyvTVJSqsfRsfFxd3CzbvuBSr5ncJLwcXFfYib/5rHJ9URyyErLi7uDdx8E1MNXyfP/3EHFxd3C7dayMiXqt5xjSikwcXFvY2bRxfLDlwWJxNVcXBxcZdyJxuX6kGKXkpyrNpn4eLiFrnV4xHVHuaFElxc3J3cO4ZJIpPey8LFxd3DnSDyoHSyCOLi4u7nXn/k9MoW+XvKN1K4uLg7uXmIUj02kYc05T5xcXFv5s4Dj2qIkveAi4v7LDch5iXO6+WsGrTg4uI+xc1br0hajXLLSSwuLu5SbnVBmUS21UMboyMduLi4Y25v8eoVQPOybHQwCxcX92busuJFHoq0lkVcXNy3casfMHkptvBRhIuL+3rufJnLl0tcXNz93OqQ1YEnpZBmWQQXF3fAXVUw7U01L6/g4uJu4X4DkZe+VdRQls4AAAAASUVORK5CYII=" alt="微信分享二维码">
 </div>
 
 

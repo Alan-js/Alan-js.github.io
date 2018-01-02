@@ -13,25 +13,25 @@
     
     
     
-    <title>webpack详解 | Alan | 个人技术博客</title>
+    <title>前端构建工具 | Alan | 个人技术博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="web,webpack">
-    <meta name="description" content="为什么使用webpack？ 拆包–&amp;gt;允许按需加载 Plugin–&amp;gt;适应大型项目 Loader–&amp;gt;定制资源包  webpack核心概念–ModuleModule模块 js css，font，images…   函数写法：var mod1 = function() {}; 对象写法：var mod2 =  {    init： function() {}}; 立即执行函数：var m">
-<meta name="keywords" content="web,webpack">
+    <meta name="keywords" content="web,前端构建工具">
+    <meta name="description" content="为何要用构建工具？ 一句话：自动化。对于需要反复重复的任务，例如压缩（minification）、编译、单元测试、linting等，自动化工具可以减轻你的劳动，简化你的工作。当你在 Gruntfile 文件正确配置好了任务，任务运行器就会自动帮你或你的小组完成大部分无聊的工作  grunt Grunt生态系统非常庞大，并且一直在增长。由于拥有数量庞大的插件可供选择，因此，你可以利用Grunt自动完">
+<meta name="keywords" content="web,前端构建工具">
 <meta property="og:type" content="article">
-<meta property="og:title" content="webpack详解">
-<meta property="og:url" content="http://yoursite.com/2018/01/02/webpack详解/index.html">
+<meta property="og:title" content="前端构建工具">
+<meta property="og:url" content="http://yoursite.com/2018/01/02/前端构建工具/index.html">
 <meta property="og:site_name" content="Alan">
-<meta property="og:description" content="为什么使用webpack？ 拆包–&amp;gt;允许按需加载 Plugin–&amp;gt;适应大型项目 Loader–&amp;gt;定制资源包  webpack核心概念–ModuleModule模块 js css，font，images…   函数写法：var mod1 = function() {}; 对象写法：var mod2 =  {    init： function() {}}; 立即执行函数：var m">
+<meta property="og:description" content="为何要用构建工具？ 一句话：自动化。对于需要反复重复的任务，例如压缩（minification）、编译、单元测试、linting等，自动化工具可以减轻你的劳动，简化你的工作。当你在 Gruntfile 文件正确配置好了任务，任务运行器就会自动帮你或你的小组完成大部分无聊的工作  grunt Grunt生态系统非常庞大，并且一直在增长。由于拥有数量庞大的插件可供选择，因此，你可以利用Grunt自动完">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-02T05:29:06.871Z">
+<meta property="og:updated_time" content="2018-01-02T05:34:37.756Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="webpack详解">
-<meta name="twitter:description" content="为什么使用webpack？ 拆包–&amp;gt;允许按需加载 Plugin–&amp;gt;适应大型项目 Loader–&amp;gt;定制资源包  webpack核心概念–ModuleModule模块 js css，font，images…   函数写法：var mod1 = function() {}; 对象写法：var mod2 =  {    init： function() {}}; 立即执行函数：var m">
+<meta name="twitter:title" content="前端构建工具">
+<meta name="twitter:description" content="为何要用构建工具？ 一句话：自动化。对于需要反复重复的任务，例如压缩（minification）、编译、单元测试、linting等，自动化工具可以减轻你的劳动，简化你的工作。当你在 Gruntfile 文件正确配置好了任务，任务运行器就会自动帮你或你的小组完成大部分无聊的工作  grunt Grunt生态系统非常庞大，并且一直在增长。由于拥有数量庞大的插件可供选择，因此，你可以利用Grunt自动完">
     
         <link rel="alternate" type="application/atom+xml" title="Alan" href="/atom.xml">
     
@@ -105,7 +105,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">webpack详解</div>
+        <div class="flex-col header-title ellipsis">前端构建工具</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -127,10 +127,10 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">webpack详解</h1>
+        <h1 class="title">前端构建工具</h1>
         <h5 class="subtitle">
             
-                <time datetime="2018-01-02T03:27:23.000Z" itemprop="datePublished" class="page-time">
+                <time datetime="2018-01-02T05:23:01.000Z" itemprop="datePublished" class="page-time">
   2018-01-02
 </time>
 
@@ -150,17 +150,17 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#为什么使用webpack？"><span class="post-toc-number">1.</span> <span class="post-toc-text">为什么使用webpack？</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#webpack核心概念–Module"><span class="post-toc-number">2.</span> <span class="post-toc-text">webpack核心概念–Module</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Module模块"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Module模块</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#webpack核心概念–Chunk"><span class="post-toc-number">3.</span> <span class="post-toc-text">webpack核心概念–Chunk</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Chunk块"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">Chunk块</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#webpack核心概念–定位"><span class="post-toc-number">4.</span> <span class="post-toc-text">webpack核心概念–定位</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Module-Loader（模块加载器）"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">Module Loader（模块加载器）</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Module-bundler（模块打包工具）"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">Module bundler（模块打包工具）</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#webpack配置"><span class="post-toc-number">5.</span> <span class="post-toc-text">webpack配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#编译资源"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">编译资源</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#提高构建速度"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">提高构建速度</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#为何要用构建工具？"><span class="post-toc-number">1.</span> <span class="post-toc-text">为何要用构建工具？</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#grunt"><span class="post-toc-number">2.</span> <span class="post-toc-text">grunt</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#gulp"><span class="post-toc-number">3.</span> <span class="post-toc-text">gulp</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#webpack"><span class="post-toc-number">4.</span> <span class="post-toc-text">webpack</span></a></li></ol>
         </nav>
     </aside>
     
-<article id="post-webpack详解"
+<article id="post-前端构建工具"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">webpack详解</h1>
+        <h1 class="post-card-title">前端构建工具</h1>
         <div class="post-meta">
-            <time class="post-time" title="2018-01-02 11:27:23" datetime="2018-01-02T03:27:23.000Z"  itemprop="datePublished">2018-01-02</time>
+            <time class="post-time" title="2018-01-02 13:23:01" datetime="2018-01-02T05:23:01.000Z"  itemprop="datePublished">2018-01-02</time>
 
             
 
@@ -173,57 +173,27 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="为什么使用webpack？"><a href="#为什么使用webpack？" class="headerlink" title="为什么使用webpack？"></a>为什么使用webpack？</h1><ul>
-<li>拆包–&gt;允许按需加载</li>
-<li>Plugin–&gt;适应大型项目</li>
-<li>Loader–&gt;定制资源包</li>
+            <h1 id="为何要用构建工具？"><a href="#为何要用构建工具？" class="headerlink" title="为何要用构建工具？"></a>为何要用构建工具？</h1><blockquote>
+<p>一句话：自动化。对于需要反复重复的任务，例如压缩（minification）、编译、单元测试、linting等，自动化工具可以减轻你的劳动，简化你的工作。当你在 Gruntfile 文件正确配置好了任务，任务运行器就会自动帮你或你的小组完成大部分无聊的工作</p>
+</blockquote>
+<h1 id="grunt"><a href="#grunt" class="headerlink" title="grunt"></a>grunt</h1><blockquote>
+<p>Grunt生态系统非常庞大，并且一直在增长。由于拥有数量庞大的插件可供选择，因此，你可以利用Grunt自动完成任何事，并且花费最少的代价。如果找不到你所需要的插件，那就自己动手创造一个Grunt插件，然后将其发布到npm上吧。</p>
+<ul>
+<li><a href="http://www.gruntjs.net/getting-started" target="_blank" rel="noopener">http://www.gruntjs.net/getting-started</a></li>
 </ul>
-<h1 id="webpack核心概念–Module"><a href="#webpack核心概念–Module" class="headerlink" title="webpack核心概念–Module"></a>webpack核心概念–Module</h1><h2 id="Module模块"><a href="#Module模块" class="headerlink" title="Module模块"></a>Module模块</h2><ol>
-<li>js</li>
-<li>css，font，images…</li>
-</ol>
-<blockquote>
-<p>函数写法：<br>var mod1 = function() {};</p>
-<p>对象写法：<br>var mod2 =  {<br>    init： function() {}<br>};</p>
-<p>立即执行函数：<br>var mod3 = (function(win) {<br>})(window);</p>
 </blockquote>
-<h1 id="webpack核心概念–Chunk"><a href="#webpack核心概念–Chunk" class="headerlink" title="webpack核心概念–Chunk"></a>webpack核心概念–Chunk</h1><h2 id="Chunk块"><a href="#Chunk块" class="headerlink" title="Chunk块"></a>Chunk块</h2><p>Many small modules combined<br>Entry Chunk，Output Chunk，Common Chunk</p>
-<h1 id="webpack核心概念–定位"><a href="#webpack核心概念–定位" class="headerlink" title="webpack核心概念–定位"></a>webpack核心概念–定位</h1><h2 id="Module-Loader（模块加载器）"><a href="#Module-Loader（模块加载器）" class="headerlink" title="Module Loader（模块加载器）"></a>Module Loader（模块加载器）</h2><h2 id="Module-bundler（模块打包工具）"><a href="#Module-bundler（模块打包工具）" class="headerlink" title="Module bundler（模块打包工具）"></a>Module bundler（模块打包工具）</h2><ol>
-<li>browserify</li>
-<li>webpack</li>
-</ol>
-<blockquote>
-<p>特点：</p>
-<ol>
-<li>浏览器中加载入口及依赖</li>
-<li>执行入口及依赖代码</li>
-<li>分析及合成模块系统</li>
-<li>生成文件束（bundle/chunk）</li>
-</ol>
-</blockquote>
-<h1 id="webpack配置"><a href="#webpack配置" class="headerlink" title="webpack配置"></a>webpack配置</h1><ul>
-<li>entry：源文件</li>
-<li>output：生成文件</li>
-<li>loader：编译文件</li>
-<li>plugins：插件</li>
-<li>resolve：文件路径指向</li>
+<h1 id="gulp"><a href="#gulp" class="headerlink" title="gulp"></a>gulp</h1><blockquote>
+<p>用自动化构建工具增强你的工作流程！</p>
+<ul>
+<li><a href="https://www.gulpjs.com.cn/docs/api/" target="_blank" rel="noopener">https://www.gulpjs.com.cn/docs/api/</a></li>
 </ul>
-<h2 id="编译资源"><a href="#编译资源" class="headerlink" title="编译资源"></a>编译资源</h2><blockquote>
-<p>将源文件编译成浏览器能识别的代码：</p>
-<ol>
-<li>es6–&gt;es5</li>
-<li>image–&gt;base64</li>
-<li>sass/less–&gt;css</li>
-<li>etc…</li>
-</ol>
 </blockquote>
-<h2 id="提高构建速度"><a href="#提高构建速度" class="headerlink" title="提高构建速度"></a>提高构建速度</h2><ol>
-<li>将大型库外链</li>
-<li>将库预先编译</li>
-<li>减少构建搜索或编译路径</li>
-<li>缓存</li>
-<li>并行</li>
-</ol>
+<h1 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h1><blockquote>
+<p>让一切变得简单。本质上，webpack 是一个现代 JavaScript 应用程序的静态模块打包器(module bundler)。当 webpack 处理应用程序时，它会递归地构建一个依赖关系图(dependency graph)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 bundle。</p>
+<ul>
+<li><a href="https://doc.webpack-china.org/concepts/" target="_blank" rel="noopener">https://doc.webpack-china.org/concepts/</a></li>
+</ul>
+</blockquote>
 
         </div>
 
@@ -231,12 +201,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-01-02T05:29:06.871Z" itemprop="dateUpdated">2018-01-02 13:29:06</time>
+    最后更新时间：<time datetime="2018-01-02T05:34:37.756Z" itemprop="dateUpdated">2018-01-02 13:34:37</time>
 </span><br>
 
 
         
-        这里可以写作者留言!!!示例：<a href="/2018/01/02/webpack详解/" target="_blank" rel="external">http://yoursite.com/2018/01/02/webpack详解/</a>
+        这里可以写作者留言!!!示例：<a href="/2018/01/02/前端构建工具/" target="_blank" rel="external">http://yoursite.com/2018/01/02/前端构建工具/</a>
         
     </div>
     <footer>
@@ -256,7 +226,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack/">webpack</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端构建工具/">前端构建工具</a></li></ul>
 
 
             
@@ -266,7 +236,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/01/02/webpack详解/&title=《webpack详解》 — Alan&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/01/02/前端构建工具/&title=《前端构建工具》 — Alan&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -276,22 +246,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/01/02/webpack详解/&title=《webpack详解》 — Alan&source=js" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/01/02/前端构建工具/&title=《前端构建工具》 — Alan&source=js" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/01/02/webpack详解/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/01/02/前端构建工具/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《webpack详解》 — Alan&url=http://yoursite.com/2018/01/02/webpack详解/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《前端构建工具》 — Alan&url=http://yoursite.com/2018/01/02/前端构建工具/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/01/02/webpack详解/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/01/02/前端构建工具/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -314,18 +284,18 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2018/01/02/前端构建工具/" id="post-prev" class="post-nav-link">
+      <a href="/2018/01/02/emmet/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">前端构建工具</h4>
+        <h4 class="title">emmet</h4>
       </a>
     </div>
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2018/01/02/UI设计/" id="post-next" class="post-nav-link">
+      <a href="/2018/01/02/webpack详解/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">UI设计</h4>
+        <h4 class="title">webpack详解</h4>
       </a>
     </div>
   
@@ -443,7 +413,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/01/02/webpack详解/&title=《webpack详解》 — Alan&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/01/02/前端构建工具/&title=《前端构建工具》 — Alan&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -453,22 +423,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/01/02/webpack详解/&title=《webpack详解》 — Alan&source=js" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/01/02/前端构建工具/&title=《前端构建工具》 — Alan&source=js" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/01/02/webpack详解/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/01/02/前端构建工具/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《webpack详解》 — Alan&url=http://yoursite.com/2018/01/02/webpack详解/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《前端构建工具》 — Alan&url=http://yoursite.com/2018/01/02/前端构建工具/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/01/02/webpack详解/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/01/02/前端构建工具/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -479,7 +449,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMklEQVR42u3aQY6DQAwFUe5/aUaaVaQRpL4NI2hXr6KQBD8WTtvubcNr/12frz/X30+S9/fTtd2xZMiQ8VoG+bmjsM6v8rDO74uoMmTIGMAgSZZfJY/pPBHz2GTIkCHjfMOXhpKGKEOGDBnXJlxOffT/hgwZMh7MuGoDd1XJemMtLkOGjBcyaoOB/3l9+3xDhgwZj2fspUW2lXwTSYYKX+KRIUPG0gzSSusE1yl9yRh1I6c8ZMiQsQSDFJC1Fls/NcePXoYMGYsySHCdtJim42JbTYYMGYsyePOLF7H8iAb/1pe7y5AhYwAjTbhp0iTvt5p0MmTIGMCotc9qGN7mC1K5DBkyBjBqpWOafGsttgsmsTJkyHg5g9yyNkqstfD4gziMQYYMGcsxeGMrTbLpEDQdWx7+b8iQIWM5Bml41Vr2ndY/H1eg0xwyZMh4OSPYOYZtON7076d1GTJkTGPw8pUPEjobUBSbDBkylmZ0BpZ8nEAA6fBAhgwZ0xi1YWFa3JKtJKfKkCFjGoOXoP1QascsNrJkyJAxgMGDTo9TEEaHKkOGjAkM/qPpmJMftuB3R0WsDBkyFmLs4QqeCt7w1TagMmTImMNIEysPtEbiRbUMGTKmMWqHvfpHJdI9bFCLy5AhY1FGZ2CQJtxrC2YZMmTIIJ8hCbozBG2NBGTIkDGMUTtCwQ+N8eK2lellyJDxWgYpYsmosn8EtriJlCFDxtKMqwYD6ZCAB80fjQwZMpZj/ACQXhkG4EDA5QAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACIElEQVR42u3ay44CQQgFUP//p52tycyUF2hNuur0yvhqjguEgscjvp4v1+szvx/33v/fpy6+MDAwbst4Lq91WOsbr9+ffFsSGwYGxjmMJIgE0EusvdSMgYGBUWUkQedJHAMDA2PO+FygGBgYGJMmdn3SNQkrb5Uv6MUxMDBuyMhP3b//+CPzDQwMjFsxnsWrOiTofbYcFQYGxtaMPMFVkVcl7ryIxMDA2JuxfqGXiHNqfpCHgYFxJiM/zOqtUHzus3/8Y2BgYBzAmDSoSUpdhzgZJGBgYOzNmHxdtYhMRpXJT/CmtsXAwNiaUeh3i4PGatHZvC8GBsYBjGpAV4U+jwcDA+McRq9N7ZV3kzT9ZtkCAwNjU8ZVg8ykfU1CzJvk8j8DBgbGDRmT4/5eouyl5sKyBQYGxnaMefNZHTfmh2jVdIyBgbEro9oozn+z6opYeWcEAwNjU0a+4pC3u1VqdeSAgYFxDqN3EN8rHJMmuZqUR/MEDAyMWzF65VqPlxeO5eISAwPjAMZVgVbXyPJX3xSRGBgYxzDygixfrejx8qSPgYGxN2OeZKvrGtXhZXOEiYGBsRHjqpydl4aTo/9m6BgYGFswkiSbHHvlSxu9ZQsMDAyM6lpDUvzlZWW1AcbAwMColmXVZrVaIEZ3wcDAwCiuUKzLxOp4ICo3MTAwDmAkTez8xr2DtvIkFgMDYzvGpHXMR569dDwfM2BgYNyc8QM1eEHP3bY03QAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 
