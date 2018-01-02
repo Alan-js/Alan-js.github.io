@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-02T03:04:10.730Z</updated>
+  <updated>2018-01-02T03:23:17.266Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webUI</title>
+    <link href="http://yoursite.com/2018/01/02/webUI/"/>
+    <id>http://yoursite.com/2018/01/02/webUI/</id>
+    <published>2018-01-02T03:19:49.000Z</published>
+    <updated>2018-01-02T03:23:17.266Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="WEB-UI是什么？"><a href="#WEB-UI是什么？" class="headerlink" title="WEB-UI是什么？"></a>WEB-UI是什么？</h1><blockquote><p>UI本意是用户界面，是英文User Interface的缩写，是用户与界面的交互关系。方向：用户研究、交互设计、界面设计。</p><ul><li>功能为主</li><li>用户为主</li></ul></blockquote><h1 id="屏幕分辨率"><a href="#屏幕分辨率" class="headerlink" title="屏幕分辨率"></a>屏幕分辨率</h1><blockquote><p>以水平和垂直像素来衡量</p></blockquote><h2 id="iMac分辨率："><a href="#iMac分辨率：" class="headerlink" title="iMac分辨率："></a>iMac分辨率：</h2><blockquote><p>21寸1920<em>1080 &amp; Retina 4K 4096</em>2304<br>27寸 Retina 5K 5120*2880</p></blockquote><h2 id="ios手机："><a href="#ios手机：" class="headerlink" title="ios手机："></a>ios手机：</h2><ul><li>4s 3.5寸 960*640 </li><li>5s 4.0寸 1136*640</li><li>6 4.7寸 1334*750</li><li>6s 5.5寸 1920*1080</li></ul><h2 id="PC："><a href="#PC：" class="headerlink" title="PC："></a>PC：</h2><ul><li>19寸 1440*900</li><li>20寸 1600*900</li><li>21.5寸 1920*1080</li><li>22寸 1680*1050</li></ul><h2 id="显示器屏幕长宽比："><a href="#显示器屏幕长宽比：" class="headerlink" title="显示器屏幕长宽比："></a>显示器屏幕长宽比：</h2><ul><li>5:4 = 1.25</li><li>4:3 = 1.33</li><li>16:10 = 1.60</li><li>16:9 = 1.77</li></ul><h2 id="常见显示器屏幕分辨率："><a href="#常见显示器屏幕分辨率：" class="headerlink" title="常见显示器屏幕分辨率："></a>常见显示器屏幕分辨率：</h2><h3 id="宽高比1-25"><a href="#宽高比1-25" class="headerlink" title="宽高比1.25"></a>宽高比1.25</h3><ul><li>800*640</li><li>1280*1024</li></ul><h3 id="宽高比1-33"><a href="#宽高比1-33" class="headerlink" title="宽高比1.33"></a>宽高比1.33</h3><ul><li>800*600</li><li>1280*960</li><li>1024*768</li><li>1400*1050</li><li>1600*1200</li><li>2048*1536</li></ul><h3 id="宽高比1-60"><a href="#宽高比1-60" class="headerlink" title="宽高比1.60"></a>宽高比1.60</h3><ul><li>1280*800</li><li>1440*900</li><li>1680*1050</li><li>1920*1200</li></ul><h3 id="宽高比1-77"><a href="#宽高比1-77" class="headerlink" title="宽高比1.77"></a>宽高比1.77</h3><ul><li>1280*720</li><li>1440*810</li><li>1680*945</li><li>1920*1080</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;WEB-UI是什么？&quot;&gt;&lt;a href=&quot;#WEB-UI是什么？&quot; class=&quot;headerlink&quot; title=&quot;WEB-UI是什么？&quot;&gt;&lt;/a&gt;WEB-UI是什么？&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;UI本意是用户界面，是英文User Interfa
+      
+    
+    </summary>
+    
+    
+      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
+    
+  </entry>
   
   <entry>
     <title>UI设计</title>
