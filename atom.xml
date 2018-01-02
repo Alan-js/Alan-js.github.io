@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-02T03:33:16.450Z</updated>
+  <updated>2018-01-02T03:34:47.091Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/01/02/webpack%E8%AF%A6%E8%A7%A3/"/>
     <id>http://yoursite.com/2018/01/02/webpack详解/</id>
     <published>2018-01-02T03:27:23.000Z</published>
-    <updated>2018-01-02T03:33:16.450Z</updated>
+    <updated>2018-01-02T03:34:47.091Z</updated>
     
     <content type="html"><![CDATA[<h1 id="为什么使用webpack？"><a href="#为什么使用webpack？" class="headerlink" title="为什么使用webpack？"></a>为什么使用webpack？</h1><ul><li>拆包–&gt;允许按需加载</li><li>Plugin–&gt;适应大型项目</li><li>Loader–&gt;定制资源包</li></ul><h1 id="webpack核心概念–Module"><a href="#webpack核心概念–Module" class="headerlink" title="webpack核心概念–Module"></a>webpack核心概念–Module</h1><h2 id="Module模块"><a href="#Module模块" class="headerlink" title="Module模块"></a>Module模块</h2><ol><li>js</li><li>css，font，images…</li></ol><blockquote><p>函数写法：<br>var mod1 = function() {};</p><p>对象写法：<br>var mod2 =  {<br>    init： function() {}<br>};</p><p>立即执行函数：<br>var mod3 = (function(win) {<br>})(window);</p></blockquote><h1 id="webpack核心概念–Chunk"><a href="#webpack核心概念–Chunk" class="headerlink" title="webpack核心概念–Chunk"></a>webpack核心概念–Chunk</h1><h2 id="Chunk块"><a href="#Chunk块" class="headerlink" title="Chunk块"></a>Chunk块</h2><p>Many small modules combined<br>Entry Chunk，Output Chunk，Common Chunk</p><h1 id="webpack核心概念–定位"><a href="#webpack核心概念–定位" class="headerlink" title="webpack核心概念–定位"></a>webpack核心概念–定位</h1><h2 id="Module-Loader（模块加载器）"><a href="#Module-Loader（模块加载器）" class="headerlink" title="Module Loader（模块加载器）"></a>Module Loader（模块加载器）</h2><h2 id="Module-bundler（模块打包工具）"><a href="#Module-bundler（模块打包工具）" class="headerlink" title="Module bundler（模块打包工具）"></a>Module bundler（模块打包工具）</h2><ol><li>browserify</li><li>webpack</li></ol><blockquote><p>特点：</p><ol><li>浏览器中加载入口及依赖</li><li>执行入口及依赖代码</li><li>分析及合成模块系统</li><li>生成文件束（bundle/chunk）</li></ol></blockquote><h1 id="webpack配置"><a href="#webpack配置" class="headerlink" title="webpack配置"></a>webpack配置</h1><ul><li>entry：源文件</li><li>output：生成文件</li><li>loader：编译文件</li><li>plugins：插件</li><li>resolve：文件路径指向</li></ul><h2 id="编译资源"><a href="#编译资源" class="headerlink" title="编译资源"></a>编译资源</h2><blockquote><p>将源文件编译成浏览器能识别的代码：</p><ol><li>es6–&gt;es5</li><li>image–&gt;base64</li><li>sass/less–&gt;css</li><li>etc…</li></ol></blockquote><h2 id="提高构建速度"><a href="#提高构建速度" class="headerlink" title="提高构建速度"></a>提高构建速度</h2><ol><li>将大型库外链</li><li>将库预先编译</li><li>减少构建搜索或编译路径</li><li>缓存</li><li>并行</li></ol>]]></content>
     
@@ -36,6 +36,8 @@
     
     </summary>
     
+    
+      <category term="webpack" scheme="http://yoursite.com/tags/webpack/"/>
     
   </entry>
   
@@ -93,9 +95,9 @@
     <link href="http://yoursite.com/2018/01/01/webUI/"/>
     <id>http://yoursite.com/2018/01/01/webUI/</id>
     <published>2018-01-01T03:11:49.000Z</published>
-    <updated>2018-01-02T03:24:34.208Z</updated>
+    <updated>2018-01-02T03:35:40.397Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="WEB-UI是什么？"><a href="#WEB-UI是什么？" class="headerlink" title="WEB-UI是什么？"></a>WEB-UI是什么？</h1><blockquote><p>UI本意是用户界面，是英文User Interface的缩写，是用户与界面的交互关系。方向：用户研究、交互设计、界面设计。</p><ul><li>功能为主</li><li>用户为主</li></ul></blockquote><h1 id="屏幕分辨率"><a href="#屏幕分辨率" class="headerlink" title="屏幕分辨率"></a>屏幕分辨率</h1><blockquote><p>以水平和垂直像素来衡量</p></blockquote><h2 id="iMac分辨率："><a href="#iMac分辨率：" class="headerlink" title="iMac分辨率："></a>iMac分辨率：</h2><blockquote><p>21寸1920<em>1080 &amp; Retina 4K 4096</em>2304<br>27寸 Retina 5K 5120*2880</p></blockquote><h2 id="ios手机："><a href="#ios手机：" class="headerlink" title="ios手机："></a>ios手机：</h2><ul><li>4s 3.5寸 960*640 </li><li>5s 4.0寸 1136*640</li><li>6 4.7寸 1334*750</li><li>6s 5.5寸 1920*1080</li></ul><h2 id="PC："><a href="#PC：" class="headerlink" title="PC："></a>PC：</h2><ul><li>19寸 1440*900</li><li>20寸 1600*900</li><li>21.5寸 1920*1080</li><li>22寸 1680*1050</li></ul><h2 id="显示器屏幕长宽比："><a href="#显示器屏幕长宽比：" class="headerlink" title="显示器屏幕长宽比："></a>显示器屏幕长宽比：</h2><ul><li>5:4 = 1.25</li><li>4:3 = 1.33</li><li>16:10 = 1.60</li><li>16:9 = 1.77</li></ul><h2 id="常见显示器屏幕分辨率："><a href="#常见显示器屏幕分辨率：" class="headerlink" title="常见显示器屏幕分辨率："></a>常见显示器屏幕分辨率：</h2><h3 id="宽高比1-25"><a href="#宽高比1-25" class="headerlink" title="宽高比1.25"></a>宽高比1.25</h3><ul><li>800*640</li><li>1280*1024</li></ul><h3 id="宽高比1-33"><a href="#宽高比1-33" class="headerlink" title="宽高比1.33"></a>宽高比1.33</h3><ul><li>800*600</li><li>1280*960</li><li>1024*768</li><li>1400*1050</li><li>1600*1200</li><li>2048*1536</li></ul><h3 id="宽高比1-60"><a href="#宽高比1-60" class="headerlink" title="宽高比1.60"></a>宽高比1.60</h3><ul><li>1280*800</li><li>1440*900</li><li>1680*1050</li><li>1920*1200</li></ul><h3 id="宽高比1-77"><a href="#宽高比1-77" class="headerlink" title="宽高比1.77"></a>宽高比1.77</h3><ul><li>1280*720</li><li>1440*810</li><li>1680*945</li><li>1920*1080</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="WEB-UI是什么？"><a href="#WEB-UI是什么？" class="headerlink" title="WEB-UI是什么？"></a>WEB-UI是什么？</h1><blockquote><p>UI本意是用户界面，是英文User Interface的缩写，是用户与界面的交互关系。方向：用户研究、交互设计、界面设计。</p><ul><li>功能为主</li><li>用户为主</li></ul></blockquote><h1 id="屏幕分辨率"><a href="#屏幕分辨率" class="headerlink" title="屏幕分辨率"></a>屏幕分辨率</h1><blockquote><p>以水平和垂直像素来衡量</p></blockquote><h2 id="iMac分辨率："><a href="#iMac分辨率：" class="headerlink" title="iMac分辨率："></a>iMac分辨率：</h2><ul><li>21寸1920<em>1080 &amp; Retina 4K 4096</em>2304</li><li>27寸 Retina 5K 5120*2880</li></ul><h2 id="ios手机："><a href="#ios手机：" class="headerlink" title="ios手机："></a>ios手机：</h2><ul><li>4s 3.5寸 960*640 </li><li>5s 4.0寸 1136*640</li><li>6 4.7寸 1334*750</li><li>6s 5.5寸 1920*1080</li></ul><h2 id="PC："><a href="#PC：" class="headerlink" title="PC："></a>PC：</h2><ul><li>19寸 1440*900</li><li>20寸 1600*900</li><li>21.5寸 1920*1080</li><li>22寸 1680*1050</li></ul><h2 id="显示器屏幕长宽比："><a href="#显示器屏幕长宽比：" class="headerlink" title="显示器屏幕长宽比："></a>显示器屏幕长宽比：</h2><ul><li>5:4 = 1.25</li><li>4:3 = 1.33</li><li>16:10 = 1.60</li><li>16:9 = 1.77</li></ul><h2 id="常见显示器屏幕分辨率："><a href="#常见显示器屏幕分辨率：" class="headerlink" title="常见显示器屏幕分辨率："></a>常见显示器屏幕分辨率：</h2><h3 id="宽高比1-25"><a href="#宽高比1-25" class="headerlink" title="宽高比1.25"></a>宽高比1.25</h3><ul><li>800*640</li><li>1280*1024</li></ul><h3 id="宽高比1-33"><a href="#宽高比1-33" class="headerlink" title="宽高比1.33"></a>宽高比1.33</h3><ul><li>800*600</li><li>1280*960</li><li>1024*768</li><li>1400*1050</li><li>1600*1200</li><li>2048*1536</li></ul><h3 id="宽高比1-60"><a href="#宽高比1-60" class="headerlink" title="宽高比1.60"></a>宽高比1.60</h3><ul><li>1280*800</li><li>1440*900</li><li>1680*1050</li><li>1920*1200</li></ul><h3 id="宽高比1-77"><a href="#宽高比1-77" class="headerlink" title="宽高比1.77"></a>宽高比1.77</h3><ul><li>1280*720</li><li>1440*810</li><li>1680*945</li><li>1920*1080</li></ul>]]></content>
     
     <summary type="html">
     
