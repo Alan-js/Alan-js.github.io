@@ -65,6 +65,36 @@
   </entry>
   
   <entry>
+    <title>vue</title>
+    <link href="http://yoursite.com/2017/09/09/vue/"/>
+    <id>http://yoursite.com/2017/09/09/vue/</id>
+    <published>2017-09-09T08:43:52.000Z</published>
+    <updated>2018-01-02T08:53:47.722Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="vuejs"><a href="#vuejs" class="headerlink" title="vuejs"></a>vuejs</h1><blockquote><p>vue是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。</p><ul><li>中文官网: <a href="https://cn.vuejs.org/v2/guide/" target="_blank" rel="noopener">https://cn.vuejs.org/v2/guide/</a></li><li>github: <a href="https://github.com/vuejs/vue" target="_blank" rel="noopener">https://github.com/vuejs/vue</a></li></ul></blockquote><h1 id="vue-ui组件库"><a href="#vue-ui组件库" class="headerlink" title="vue ui组件库"></a>vue ui组件库</h1><h2 id="iview"><a href="#iview" class="headerlink" title="iview"></a>iview</h2><ul><li><a href="https://www.iviewui.com/" target="_blank" rel="noopener">https://www.iviewui.com/</a></li></ul><h2 id="eleme"><a href="#eleme" class="headerlink" title="eleme"></a>eleme</h2><ul><li><a href="http://element.eleme.io/#/" target="_blank" rel="noopener">http://element.eleme.io/#/</a></li></ul><h2 id="移动端ui库"><a href="#移动端ui库" class="headerlink" title="移动端ui库"></a>移动端ui库</h2><ul><li><a href="http://www.muse-ui.org/#/usage" target="_blank" rel="noopener">http://www.muse-ui.org/#/usage</a></li><li><a href="http://mint-ui.github.io/docs/#/zh-cn" target="_blank" rel="noopener">http://mint-ui.github.io/docs/#/zh-cn</a></li><li><a href="https://vux.li/#/?id=%E7%AE%80%E4%BB%8B" target="_blank" rel="noopener">https://vux.li/#/?id=%E7%AE%80%E4%BB%8B</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;vuejs&quot;&gt;&lt;a href=&quot;#vuejs&quot; class=&quot;headerlink&quot; title=&quot;vuejs&quot;&gt;&lt;/a&gt;vuejs&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;vue是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底
+      
+    
+    </summary>
+    
+    
+      <category term="web" scheme="http://yoursite.com/tags/web/"/>
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+      <category term="work" scheme="http://yoursite.com/tags/work/"/>
+    
+  </entry>
+  
+  <entry>
     <title>前端构建工具</title>
     <link href="http://yoursite.com/2017/09/01/%E5%89%8D%E7%AB%AF%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
     <id>http://yoursite.com/2017/09/01/前端构建工具/</id>
