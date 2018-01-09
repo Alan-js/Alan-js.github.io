@@ -19,9 +19,9 @@
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="java,spring,web,work">
+    <meta name="keywords" content="web,java,spring,work">
     <meta name="description" content="Spring Boot要点 Spring将很多魔法带入了Spring应用程序的开发之中，其中最重要的是以下四个核心。  自动配置：针对很多Spring应用程序常见的应用功能，Spring Boot能自动提供相关配置 起步依赖：告诉Spring Boot需要什么功能，它就能引入需要的库。 命令行界面：这是Spring Boot的可选特性，借此你只需写代码就能完成完整的应用程序，无需传统项目构建。 A">
-<meta name="keywords" content="java,spring,web,work">
+<meta name="keywords" content="web,java,spring,work">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SpringBoot入门">
 <meta property="og:url" content="http://yoursite.com/2018/01/09/SpringBoot入门/index.html">
@@ -34,10 +34,12 @@
 <meta property="og:image" content="http://yoursite.com/images/springboot/sb4.jpg">
 <meta property="og:image" content="http://yoursite.com/images/springboot/sb.jpg">
 <meta property="og:image" content="http://yoursite.com/images/springboot/sb6.jpg">
+<meta property="og:image" content="http://yoursite.com/images/springboot/sb10.jpg">
+<meta property="og:image" content="http://yoursite.com/images/springboot/sb11.jpg">
 <meta property="og:image" content="http://yoursite.com/images/springboot/sb7.jpg">
 <meta property="og:image" content="http://yoursite.com/images/springboot/sb8.jpg">
 <meta property="og:image" content="http://yoursite.com/images/springboot/sb9.jpg">
-<meta property="og:updated_time" content="2018-01-09T07:59:13.273Z">
+<meta property="og:updated_time" content="2018-01-09T08:05:25.219Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SpringBoot入门">
 <meta name="twitter:description" content="Spring Boot要点 Spring将很多魔法带入了Spring应用程序的开发之中，其中最重要的是以下四个核心。  自动配置：针对很多Spring应用程序常见的应用功能，Spring Boot能自动提供相关配置 起步依赖：告诉Spring Boot需要什么功能，它就能引入需要的库。 命令行界面：这是Spring Boot的可选特性，借此你只需写代码就能完成完整的应用程序，无需传统项目构建。 A">
@@ -160,7 +162,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Spring-Boot要点"><span class="post-toc-number">1.</span> <span class="post-toc-text">Spring Boot要点</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#初始化Spring-Boot项目"><span class="post-toc-number">2.</span> <span class="post-toc-text">初始化Spring Boot项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-通过IntelliJ-IDEA使用-强烈推荐"><span class="post-toc-number">3.</span> <span class="post-toc-text">1.通过IntelliJ IDEA使用(强烈推荐)</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-通过Web界面使用"><span class="post-toc-number">4.</span> <span class="post-toc-text">2.通过Web界面使用</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-项目结构"><span class="post-toc-number">5.</span> <span class="post-toc-text">3.项目结构</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解析pom-xml"><span class="post-toc-number">6.</span> <span class="post-toc-text">解析pom.xml</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#应用入口类"><span class="post-toc-number">7.</span> <span class="post-toc-text">应用入口类</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动项目的三种方式："><span class="post-toc-number">8.</span> <span class="post-toc-text">启动项目的三种方式：</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Spring-Boot要点"><span class="post-toc-number">1.</span> <span class="post-toc-text">Spring Boot要点</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#初始化Spring-Boot项目"><span class="post-toc-number">2.</span> <span class="post-toc-text">初始化Spring Boot项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-通过IntelliJ-IDEA使用-强烈推荐"><span class="post-toc-number">3.</span> <span class="post-toc-text">1.通过IntelliJ IDEA使用(强烈推荐)</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-通过Web界面使用"><span class="post-toc-number">4.</span> <span class="post-toc-text">2.通过Web界面使用</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#项目结构"><span class="post-toc-number">5.</span> <span class="post-toc-text">项目结构</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解析pom-xml"><span class="post-toc-number">6.</span> <span class="post-toc-text">解析pom.xml</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#应用入口类"><span class="post-toc-number">7.</span> <span class="post-toc-text">应用入口类</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动项目的三种方式："><span class="post-toc-number">8.</span> <span class="post-toc-text">启动项目的三种方式：</span></a></li></ol>
         </nav>
     </aside>
     
@@ -239,7 +241,7 @@
                 </div>
                 <div class="image-caption"></div>
             </figure><br>2.3 点击Generate Project下载项目压缩包<br>2.4 导入到你的工程，如果是IDEA，则需要：<br>a. 菜单中选择File–&gt;New–&gt;Project from Existing Sources…<br>b. 选择解压后的项目文件夹，点击OK<br>c. 点击Import project from external model并选择Maven，点击Next到底为止<br>d. 若你的环境有多个版本的JDK，注意到选择Java SDK的版本</p>
-<h2 id="3-项目结构"><a href="#3-项目结构" class="headerlink" title="3.项目结构"></a>3.项目结构</h2><p>根据上面的操作已经初始化了一个Spring Boot的框架了，项目结构如下：<br><figure class="image-bubble">
+<h2 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h2><p>根据上面的操作已经初始化了一个Spring Boot的框架了，项目结构如下：<br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="/images/springboot/sb6.jpg" alt="" title="">
@@ -256,21 +258,23 @@
 </ul>
 </blockquote>
 <h2 id="解析pom-xml"><a href="#解析pom-xml" class="headerlink" title="解析pom.xml"></a>解析pom.xml</h2><ul>
-<li><p>Spring Boot父级依赖<br>  \<parent></parent></p>
-<pre><code>&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-&lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
-&lt;version&gt;1.5.9.RELEASE&lt;/version&gt;
-&lt;relativePath/&gt; &lt;!-- lookup parent from repository --&gt;
-</code></pre><p>  \</p>
+<li><p>Spring Boot父级依赖</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/springboot/sb10.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
 </li>
-<li><p>Spring Boot Maven插件<br> \ <build></build></p>
-<pre><code>&lt;plugins&gt;
-    &lt;plugin&gt;
-        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-        &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
-    &lt;/plugin&gt;
-&lt;/plugins&gt;
-</code></pre><p>  \</p>
+<li><p>Spring Boot Maven插件</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/springboot/sb11.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
 </li>
 </ul>
 <h2 id="应用入口类"><a href="#应用入口类" class="headerlink" title="应用入口类"></a>应用入口类</h2><blockquote>
@@ -318,7 +322,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-01-09T07:59:13.273Z" itemprop="dateUpdated">2018-01-09 15:59:13</time>
+    最后更新时间：<time datetime="2018-01-09T08:05:25.219Z" itemprop="dateUpdated">2018-01-09 16:05:25</time>
 </span><br>
 
 
