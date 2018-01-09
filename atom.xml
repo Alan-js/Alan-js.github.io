@@ -118,9 +118,9 @@
     
       <category term="work" scheme="http://yoursite.com/tags/work/"/>
     
-      <category term="js" scheme="http://yoursite.com/tags/js/"/>
-    
       <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
     
   </entry>
   
@@ -453,9 +453,9 @@
     
       <category term="web" scheme="http://yoursite.com/tags/web/"/>
     
-      <category term="day-to-day" scheme="http://yoursite.com/tags/day-to-day/"/>
-    
       <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+      <category term="day-to-day" scheme="http://yoursite.com/tags/day-to-day/"/>
     
   </entry>
   
