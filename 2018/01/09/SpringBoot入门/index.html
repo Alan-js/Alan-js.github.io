@@ -37,7 +37,7 @@
 <meta property="og:image" content="http://yoursite.com/images/springboot/sb7.jpg">
 <meta property="og:image" content="http://yoursite.com/images/springboot/sb8.jpg">
 <meta property="og:image" content="http://yoursite.com/images/springboot/sb9.jpg">
-<meta property="og:updated_time" content="2018-01-09T07:46:01.177Z">
+<meta property="og:updated_time" content="2018-01-09T07:49:31.679Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SpringBoot入门">
 <meta name="twitter:description" content="Spring Boot要点 Spring将很多魔法带入了Spring应用程序的开发之中，其中最重要的是以下四个核心。  自动配置：针对很多Spring应用程序常见的应用功能，Spring Boot能自动提供相关配置 起步依赖：告诉Spring Boot需要什么功能，它就能引入需要的库。 命令行界面：这是Spring Boot的可选特性，借此你只需写代码就能完成完整的应用程序，无需传统项目构建。 A">
@@ -259,12 +259,21 @@
 </ul>
 </blockquote>
 <h2 id="解析pom-xml"><a href="#解析pom-xml" class="headerlink" title="解析pom.xml"></a>解析pom.xml</h2><ul>
-<li><p>Spring Boot父级依赖</p>
-  <parent><br>      <groupid>org.springframework.boot</groupid><br>      <artifactid>spring-boot-starter-parent</artifactid><br>      <version>1.5.9.RELEASE</version><br>      <relativepath> <!-- lookup parent from repository --><br>  </relativepath></parent>
+<li><p>Spring Boot父级依赖<br>  \<parent></parent></p>
+<pre><code>&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+&lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
+&lt;version&gt;1.5.9.RELEASE&lt;/version&gt;
+&lt;relativePath/&gt; &lt;!-- lookup parent from repository --&gt;
+</code></pre><p>  \</p>
 </li>
-<li><p>Spring Boot Maven插件</p>
-  <build><br>      <plugins><br>          <plugin><br>              <groupid>org.springframework.boot</groupid><br>              <artifactid>spring-boot-maven-plugin</artifactid><br>          </plugin><br>      </plugins><br>  </build>
-
+<li><p>Spring Boot Maven插件<br> \ <build></build></p>
+<pre><code>&lt;plugins&gt;
+    &lt;plugin&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+    &lt;/plugin&gt;
+&lt;/plugins&gt;
+</code></pre><p>  \</p>
 </li>
 </ul>
 <h2 id="应用入口类"><a href="#应用入口类" class="headerlink" title="应用入口类"></a>应用入口类</h2><blockquote>
@@ -312,7 +321,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-01-09T07:46:01.177Z" itemprop="dateUpdated">2018-01-09 15:46:01</time>
+    最后更新时间：<time datetime="2018-01-09T07:49:31.679Z" itemprop="dateUpdated">2018-01-09 15:49:31</time>
 </span><br>
 
 
