@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-09T04:00:00.685Z</updated>
+  <updated>2018-01-09T07:46:01.177Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,25 +21,26 @@
     <link href="http://yoursite.com/2018/01/09/SpringBoot%E5%85%A5%E9%97%A8/"/>
     <id>http://yoursite.com/2018/01/09/SpringBoot入门/</id>
     <published>2018-01-09T01:35:46.000Z</published>
-    <updated>2018-01-09T04:00:00.685Z</updated>
+    <updated>2018-01-09T07:46:01.177Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Spring将很多魔法带入了Spring应用程序的开发之中，其中最重要的是以下四个核心"><a href="#Spring将很多魔法带入了Spring应用程序的开发之中，其中最重要的是以下四个核心" class="headerlink" title="Spring将很多魔法带入了Spring应用程序的开发之中，其中最重要的是以下四个核心:"></a>Spring将很多魔法带入了Spring应用程序的开发之中，其中最重要的是以下四个核心:</h2><ol><li>自动配置：针对很多Spring应用程序常见的应用功能，Spring Boot能自动提供相关配置。</li><li>起步依赖：告诉Spring Boot需要什么功能，它就能引入需要的库。</li><li>命令行界面：这是Spring Boot的可选特性，借此你只需写代码就能完成完整的应用程序，无需传统项目构建。</li><li>Actuator：让你能够深入运行中的Spring Boot应用程序，一探究竟。</li></ol><h2 id="初始化Spring-Boot项目"><a href="#初始化Spring-Boot项目" class="headerlink" title="初始化Spring Boot项目"></a>初始化Spring Boot项目</h2><blockquote><p>构建一个Sping Boot的Maven项目，强烈推荐Spring Initializr,它从本质上来说就是一个Web应用程序，它能为你生成Spring Boot项目结构。<br>Spring Initializr有几种用法：</p></blockquote><ol><li>通过IntelliJ IDEA使用(强烈推荐)<blockquote><p>IntelliJ IDEA是非常流行的IDE，IntelliJ IDEA 14.1已经支持Spring Boot了。创建Spring Boot操作步骤如下：</p></blockquote></li></ol><p>1.1 在File菜单里面选择 New &gt; Project,然后选择Spring Initializr，接着如下图一步步操作即可。<br><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/sb.jpg" alt="" title="">                </div>                <div class="image-caption"></div>            </figure></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="Spring-Boot要点"><a href="#Spring-Boot要点" class="headerlink" title="Spring Boot要点"></a>Spring Boot要点</h2><blockquote><p>Spring将很多魔法带入了Spring应用程序的开发之中，其中最重要的是以下四个核心。</p><ul><li>自动配置：针对很多Spring应用程序常见的应用功能，Spring Boot能自动提供相关配置</li><li>起步依赖：告诉Spring Boot需要什么功能，它就能引入需要的库。</li><li>命令行界面：这是Spring Boot的可选特性，借此你只需写代码就能完成完整的应用程序，无需传统项目构建。</li><li>Actuator：让你能够深入运行中的Spring Boot应用程序，一探究竟。</li></ul></blockquote><h2 id="初始化Spring-Boot项目"><a href="#初始化Spring-Boot项目" class="headerlink" title="初始化Spring Boot项目"></a>初始化Spring Boot项目</h2><blockquote><p>构建一个Sping Boot的Maven项目，强烈推荐Spring Initializr,它从本质上来说就是一个Web应用程序，它能为你生成Spring Boot项目结构。</p><ul><li>Spring Initializr有几种用法：</li></ul></blockquote><h2 id="1-通过IntelliJ-IDEA使用-强烈推荐"><a href="#1-通过IntelliJ-IDEA使用-强烈推荐" class="headerlink" title="1.通过IntelliJ IDEA使用(强烈推荐)"></a>1.通过IntelliJ IDEA使用(强烈推荐)</h2><blockquote><p>IntelliJ IDEA是非常流行的IDE，IntelliJ IDEA 14.1已经支持Spring Boot了。创建Spring Boot操作步骤如下：</p><ul><li>在File菜单里面选择 New &gt; Project,然后选择Spring Initializr，接着如下图一步步操作即可。<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/springboot/sb1.jpg" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/springboot/sb2.jpg" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/springboot/sb3.jpg" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/springboot/sb4.jpg" alt="" title="">                </div>                <div class="image-caption"></div>            </figure></li></ul></blockquote><h2 id="2-通过Web界面使用"><a href="#2-通过Web界面使用" class="headerlink" title="2.通过Web界面使用"></a>2.通过Web界面使用</h2><p>2.1 访问：<a href="http://start.spring.io/" target="_blank" rel="noopener">http://start.spring.io/</a><br>2.2 选择构建工具Maven Project、Spring Boot版本1.5.1以及一些工程基本信息，可参考下图所示<br><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/springboot/sb.jpg" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><br>2.3 点击Generate Project下载项目压缩包<br>2.4 导入到你的工程，如果是IDEA，则需要：<br>a. 菜单中选择File–&gt;New–&gt;Project from Existing Sources…<br>b. 选择解压后的项目文件夹，点击OK<br>c. 点击Import project from external model并选择Maven，点击Next到底为止<br>d. 若你的环境有多个版本的JDK，注意到选择Java SDK的版本</p><h2 id="3-项目结构"><a href="#3-项目结构" class="headerlink" title="3.项目结构"></a>3.项目结构</h2><ul><li>根据上面的操作已经初始化了一个Spring Boot的框架了，项目结构如下：<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/springboot/sb6.jpg" alt="" title="">                </div>                <div class="image-caption"></div>            </figure></li></ul><blockquote><p>如你所见，项目里面基本没有代码，除了几个空目录外，还包含如下几样东西。</p><ul><li>pom.xml：Maven构建说明文件。</li><li>DemoApplication.java：一个带有main()方法的类，用于启动应用程序（关键）。</li><li>DemoApplicationTests.java：一个空的Junit测试类，它加载了一个使用Spring Boot字典配置功能的Spring应用程序上下文。</li><li>application.properties：一个空的properties文件，你可以根据需要添加配置属性。</li></ul></blockquote><h2 id="解析pom-xml"><a href="#解析pom-xml" class="headerlink" title="解析pom.xml"></a>解析pom.xml</h2><ul><li><p>Spring Boot父级依赖</p>  <parent><br>      <groupid>org.springframework.boot</groupid><br>      <artifactid>spring-boot-starter-parent</artifactid><br>      <version>1.5.9.RELEASE</version><br>      <relativepath> <!-- lookup parent from repository --><br>  </relativepath></parent></li><li><p>Spring Boot Maven插件</p>  <build><br>      <plugins><br>          <plugin><br>              <groupid>org.springframework.boot</groupid><br>              <artifactid>spring-boot-maven-plugin</artifactid><br>          </plugin><br>      </plugins><br>  </build></li></ul><h2 id="应用入口类"><a href="#应用入口类" class="headerlink" title="应用入口类"></a>应用入口类</h2><blockquote><p>DemoApplication是一个很关键的启动类，程序的入口就是这里,为了演示简单，我们不再新建控制类，而是直接在这个入口类中编写，添加@RestController以及index方法，如下：<br><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/springboot/sb7.jpg" alt="" title="">                </div>                <div class="image-caption"></div>            </figure></p><ul><li>@SpringBootApplication是Sprnig Boot项目的核心注解，主要目的是开启自动配置。</li><li>main方法这是一个标准的Java应用的main的方法，主要作用是作为项目启动的入口。</li><li>@RestController注解等价于@Controller+@ResponseBody的结合，使用这个注解的类里面的方法都以json格式输出。</li></ul></blockquote><h2 id="启动项目的三种方式："><a href="#启动项目的三种方式：" class="headerlink" title="启动项目的三种方式："></a>启动项目的三种方式：</h2><ul><li>DemoApplication的main方法</li><li><p>使用命令 mvn spring-boot:run”在命令行启动该应用，IDEA中该命令在如下位置：</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/springboot/sb8.jpg" alt="" title="">                </div>                <div class="image-caption"></div>            </figure></li><li><p>运行“mvn package”进行打包时，会打包成一个可以直接运行的 JAR 文件，使用“java -jar”命令就可以直接运行。</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/springboot/sb9.jpg" alt="" title="">                </div>                <div class="image-caption"></div>            </figure></li></ul><blockquote><p>打开浏览器访问<a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a>, 你就能看到页面显示Hello Spring Boot效果了。</p></blockquote>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;Spring将很多魔法带入了Spring应用程序的开发之中，其中最重要的是以下四个核心&quot;&gt;&lt;a href=&quot;#Spring将很多魔法带入了Spring应用程序的开发之中，其中最重要的是以下四个核心&quot; class=&quot;headerlink&quot; title=&quot;Spring
+        &lt;h2 id=&quot;Spring-Boot要点&quot;&gt;&lt;a href=&quot;#Spring-Boot要点&quot; class=&quot;headerlink&quot; title=&quot;Spring Boot要点&quot;&gt;&lt;/a&gt;Spring Boot要点&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Spring将很多魔法带入
       
     
     </summary>
     
     
-      <category term="web" scheme="http://yoursite.com/tags/web/"/>
-    
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
     
       <category term="spring" scheme="http://yoursite.com/tags/spring/"/>
+    
+      <category term="web" scheme="http://yoursite.com/tags/web/"/>
     
       <category term="work" scheme="http://yoursite.com/tags/work/"/>
     
@@ -195,9 +196,9 @@
     </summary>
     
     
-      <category term="css3" scheme="http://yoursite.com/tags/css3/"/>
-    
       <category term="web" scheme="http://yoursite.com/tags/web/"/>
+    
+      <category term="css3" scheme="http://yoursite.com/tags/css3/"/>
     
   </entry>
   
@@ -452,9 +453,9 @@
     
       <category term="web" scheme="http://yoursite.com/tags/web/"/>
     
-      <category term="day-to-day" scheme="http://yoursite.com/tags/day-to-day/"/>
-    
       <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+      <category term="day-to-day" scheme="http://yoursite.com/tags/day-to-day/"/>
     
   </entry>
   
