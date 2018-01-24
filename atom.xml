@@ -36,11 +36,11 @@
     </summary>
     
     
+      <category term="web" scheme="http://yoursite.com/tags/web/"/>
+    
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
     
       <category term="spring" scheme="http://yoursite.com/tags/spring/"/>
-    
-      <category term="web" scheme="http://yoursite.com/tags/web/"/>
     
       <category term="work" scheme="http://yoursite.com/tags/work/"/>
     
@@ -196,9 +196,9 @@
     </summary>
     
     
-      <category term="web" scheme="http://yoursite.com/tags/web/"/>
-    
       <category term="css3" scheme="http://yoursite.com/tags/css3/"/>
+    
+      <category term="web" scheme="http://yoursite.com/tags/web/"/>
     
   </entry>
   
@@ -453,9 +453,9 @@
     
       <category term="web" scheme="http://yoursite.com/tags/web/"/>
     
-      <category term="day-to-day" scheme="http://yoursite.com/tags/day-to-day/"/>
-    
       <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+      <category term="day-to-day" scheme="http://yoursite.com/tags/day-to-day/"/>
     
   </entry>
   
