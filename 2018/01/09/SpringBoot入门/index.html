@@ -28,12 +28,22 @@
 <meta property="og:site_name" content="Alan">
 <meta property="og:description" content="Spring Boot要点 Spring将很多魔法带入了Spring应用程序的开发之中，其中最重要的是以下四个核心。  自动配置：针对很多Spring应用程序常见的应用功能，Spring Boot能自动提供相关配置 起步依赖：告诉Spring Boot需要什么功能，它就能引入需要的库。 命令行界面：这是Spring Boot的可选特性，借此你只需写代码就能完成完整的应用程序，无需传统项目构建。 A">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/images/springboot/sb1.jpg">
-<meta property="og:updated_time" content="2018-01-09T08:21:43.697Z">
+<meta property="og:image" content="http://yoursite.com/2018/01/09/SpringBoot入门/sb1.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/01/09/SpringBoot入门/sb2.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/01/09/SpringBoot入门/sb3.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/01/09/SpringBoot入门/sb4.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/01/09/SpringBoot入门/sb.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/01/09/SpringBoot入门/sb6.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/01/09/SpringBoot入门/sb10.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/01/09/SpringBoot入门/sb11.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/01/09/SpringBoot入门/sb7.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/01/09/SpringBoot入门/sb8.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/01/09/SpringBoot入门/sb9.jpg">
+<meta property="og:updated_time" content="2018-01-24T08:03:27.827Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SpringBoot入门">
 <meta name="twitter:description" content="Spring Boot要点 Spring将很多魔法带入了Spring应用程序的开发之中，其中最重要的是以下四个核心。  自动配置：针对很多Spring应用程序常见的应用功能，Spring Boot能自动提供相关配置 起步依赖：告诉Spring Boot需要什么功能，它就能引入需要的库。 命令行界面：这是Spring Boot的可选特性，借此你只需写代码就能完成完整的应用程序，无需传统项目构建。 A">
-<meta name="twitter:image" content="http://yoursite.com/images/springboot/sb1.jpg">
+<meta name="twitter:image" content="http://yoursite.com/2018/01/09/SpringBoot入门/sb1.jpg">
     
         <link rel="alternate" type="application/atom+xml" title="Alan" href="/atom.xml">
     
@@ -152,7 +162,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Spring-Boot要点"><span class="post-toc-number">1.</span> <span class="post-toc-text">Spring Boot要点</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#初始化Spring-Boot项目"><span class="post-toc-number">2.</span> <span class="post-toc-text">初始化Spring Boot项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-通过IntelliJ-IDEA使用-强烈推荐"><span class="post-toc-number">3.</span> <span class="post-toc-text">1.通过IntelliJ IDEA使用(强烈推荐)</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Spring-Boot要点"><span class="post-toc-number">1.</span> <span class="post-toc-text">Spring Boot要点</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#初始化Spring-Boot项目"><span class="post-toc-number">2.</span> <span class="post-toc-text">初始化Spring Boot项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-通过IntelliJ-IDEA使用-强烈推荐"><span class="post-toc-number">3.</span> <span class="post-toc-text">1.通过IntelliJ IDEA使用(强烈推荐)</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-通过Web界面使用"><span class="post-toc-number">4.</span> <span class="post-toc-text">2.通过Web界面使用</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#项目结构"><span class="post-toc-number">5.</span> <span class="post-toc-text">项目结构</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解析pom-xml"><span class="post-toc-number">6.</span> <span class="post-toc-text">解析pom.xml</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#应用入口类"><span class="post-toc-number">7.</span> <span class="post-toc-text">应用入口类</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动项目的三种方式："><span class="post-toc-number">8.</span> <span class="post-toc-text">启动项目的三种方式：</span></a></li></ol>
         </nav>
     </aside>
     
@@ -196,45 +206,45 @@
 <li>在File菜单里面选择 New &gt; Project,然后选择Spring Initializr，接着如下图一步步操作即可。<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/images/springboot/sb1.jpg" alt="" title="">
-                </div>
-                <div class="image-caption"></div>
-            </figure>
-<!-- <figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/springboot/sb2.jpg" alt="" title="">
+                    <img src="/2018/01/09/SpringBoot入门/sb1.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/images/springboot/sb3.jpg" alt="" title="">
+                    <img src="/2018/01/09/SpringBoot入门/sb2.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/images/springboot/sb4.jpg" alt="" title="">
+                    <img src="/2018/01/09/SpringBoot入门/sb3.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2018/01/09/SpringBoot入门/sb4.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
 </li>
 </ul>
 </blockquote>
-<h2 id="2-通过Web界面使用"><a href="#2-通过Web界面使用" class="headerlink" title="2.通过Web界面使用"></a>2.通过Web界面使用</h2><p>2.1 访问：<a href="http://start.spring.io/">http://start.spring.io/</a><br>2.2 选择构建工具Maven Project、Spring Boot版本1.5.1以及一些工程基本信息，可参考下图所示<br><figure class="image-bubble">
+<h2 id="2-通过Web界面使用"><a href="#2-通过Web界面使用" class="headerlink" title="2.通过Web界面使用"></a>2.通过Web界面使用</h2><p>2.1 访问：<a href="http://start.spring.io/" target="_blank" rel="noopener">http://start.spring.io/</a><br>2.2 选择构建工具Maven Project、Spring Boot版本1.5.1以及一些工程基本信息，可参考下图所示<br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/images/springboot/sb.jpg" alt="" title="">
+                    <img src="/2018/01/09/SpringBoot入门/sb.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure><br>2.3 点击Generate Project下载项目压缩包<br>2.4 导入到你的工程，如果是IDEA，则需要：<br>a. 菜单中选择File–&gt;New–&gt;Project from Existing Sources…<br>b. 选择解压后的项目文件夹，点击OK<br>c. 点击Import project from external model并选择Maven，点击Next到底为止<br>d. 若你的环境有多个版本的JDK，注意到选择Java SDK的版本</p>
 <h2 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h2><p>根据上面的操作已经初始化了一个Spring Boot的框架了，项目结构如下：<br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/images/springboot/sb6.jpg" alt="" title="">
+                    <img src="/2018/01/09/SpringBoot入门/sb6.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure></p>
@@ -252,7 +262,7 @@
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/images/springboot/sb10.jpg" alt="" title="">
+                    <img src="/2018/01/09/SpringBoot入门/sb10.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
@@ -261,7 +271,7 @@
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/images/springboot/sb11.jpg" alt="" title="">
+                    <img src="/2018/01/09/SpringBoot入门/sb11.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
@@ -271,7 +281,7 @@
 <p>DemoApplication是一个很关键的启动类，程序的入口就是这里,为了演示简单，我们不再新建控制类，而是直接在这个入口类中编写，添加@RestController以及index方法，如下：<br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/images/springboot/sb7.jpg" alt="" title="">
+                    <img src="/2018/01/09/SpringBoot入门/sb7.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure></p>
@@ -287,7 +297,7 @@
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/images/springboot/sb8.jpg" alt="" title="">
+                    <img src="/2018/01/09/SpringBoot入门/sb8.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
@@ -296,23 +306,23 @@
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/images/springboot/sb9.jpg" alt="" title="">
+                    <img src="/2018/01/09/SpringBoot入门/sb9.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
 </li>
 </ul>
 <blockquote>
-<p>打开浏览器访问<a href="http://localhost:8080">http://localhost:8080</a>, 你就能看到页面显示Hello Spring Boot效果了。 –&gt;</p>
+<p>打开浏览器访问<a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a>, 你就能看到页面显示Hello Spring Boot效果了。</p>
 </blockquote>
---></li></ul></blockquote>
+
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-01-09T08:21:43.697Z" itemprop="dateUpdated">2018-01-09 16:21:43</time>
+    最后更新时间：<time datetime="2018-01-24T08:03:27.827Z" itemprop="dateUpdated">2018-01-24 16:03:27</time>
 </span><br>
 
 
@@ -392,7 +402,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2018/01/24/SpringBoot入门-1/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">SpringBoot入门</h4>
+      </a>
+    </div>
   
 
   
